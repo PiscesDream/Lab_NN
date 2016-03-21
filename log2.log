@@ -1,0 +1,125 @@
+Using gpu device 0: GeForce GTX TITAN X
+/home/shaofan/.local/lib/python2.7/site-packages/theano/scan_module/scan.py:1017: Warning: In the strict mode, all neccessary shared variables must be passed as a part of non_sequences
+  'must be passed as a part of non_sequences', Warning)
+/home/shaofan/.local/lib/python2.7/site-packages/theano/scan_module/scan_perform_ext.py:133: RuntimeWarning: numpy.ndarray size changed, may indicate binary incompatibility
+  from scan_perform.scan_perform import *
+/home/shaofan/Projects/NN/NN/RNN/attention/glimpse.py:156: UserWarning: theano.function was asked to create a function computing outputs given certain inputs, but the provided input variable at index 1 is not part of the computational graph needed to compute the outputs: y.
+To make this warning into an error, you can pass the parameter on_unused_input='raise' to theano.function. To disable it completely, use on_unused_input='ignore'.
+  self.debug = theano.function([x, y, lr], au.output, on_unused_input='warn')
+/home/shaofan/Projects/NN/NN/RNN/attention/glimpse.py:156: UserWarning: theano.function was asked to create a function computing outputs given certain inputs, but the provided input variable at index 2 is not part of the computational graph needed to compute the outputs: lr.
+To make this warning into an error, you can pass the parameter on_unused_input='raise' to theano.function. To disable it completely, use on_unused_input='ignore'.
+  self.debug = theano.function([x, y, lr], au.output, on_unused_input='warn')
+(70000, 28, 28)
+(70000,)
+compile step()
+compile predict()
+compile forward()
+compile error()
+compile locate()
+compile debug()
+
+	acc = 700/7000 = 0.1
+Iter[0] lr=0.09
+	GDcost: -25.7532539368	RLcost: -1300.61863451	correct: 458.0/5000
+Iter[5] lr=0.09
+	GDcost: -23.9117733637	RLcost: -1247.25603839	correct: 554.200012207/5000
+Iter[10] lr=0.09
+	GDcost: -23.5090850483	RLcost: -1244.68672332	correct: 511.399993896/5000
+Iter[15] lr=0.09
+	GDcost: -23.3580745459	RLcost: -1247.04428149	correct: 533.400024414/5000
+Iter[20] lr=0.09
+	GDcost: -23.2789707184	RLcost: -1253.46725732	correct: 499.600006104/5000
+Iter[25] lr=0.09
+	GDcost: -23.2312557514	RLcost: -1251.43251224	correct: 517.799987793/5000
+Iter[30] lr=0.09
+	GDcost: -23.1982502476	RLcost: -1251.24022657	correct: 504.600006104/5000
+Iter[35] lr=0.09
+	GDcost: -23.1743045383	RLcost: -1250.02511177	correct: 484.200012207/5000
+Iter[40] lr=0.09
+	GDcost: -23.1561975712	RLcost: -1248.47256155	correct: 493.200012207/5000
+Iter[45] lr=0.09
+	GDcost: -23.1420286013	RLcost: -1247.61171699	correct: 508.799987793/5000
+
+	acc = 662/7000 = 0.0945714285714
+Iter[50] lr=0.09
+	GDcost: -23.1306385339	RLcost: -1249.24556022	correct: 530.799987793/5000
+Iter[55] lr=0.09
+	GDcost: -23.1212804999	RLcost: -1249.21411913	correct: 517.400024414/5000
+Iter[60] lr=0.09
+	GDcost: -23.1134572264	RLcost: -1248.72102084	correct: 512.200012207/5000
+Iter[65] lr=0.09
+	GDcost: -23.106818806	RLcost: -1247.66129805	correct: 523.799987793/5000
+Iter[70] lr=0.09
+	GDcost: -23.1011152133	RLcost: -1247.25052518	correct: 518.599975586/5000
+Iter[75] lr=0.09
+	GDcost: -23.0961636493	RLcost: -1247.39406407	correct: 514.599975586/5000
+Iter[80] lr=0.09
+	GDcost: -23.0918233424	RLcost: -1246.5319811	correct: 514.0/5000
+Iter[85] lr=0.09
+	GDcost: -23.0879865913	RLcost: -1248.03785662	correct: 511.0/5000
+Iter[90] lr=0.09
+	GDcost: -23.0845716707	RLcost: -1247.55852164	correct: 494.0/5000
+Iter[95] lr=0.09
+	GDcost: -23.0815139413	RLcost: -1248.12581531	correct: 502.0/5000
+
+	acc = 675/7000 = 0.0964285714286
+Iter[100] lr=0.09
+	GDcost: -23.0787578054	RLcost: -1247.33129871	correct: 503.399993896/5000
+Iter[105] lr=0.09
+	GDcost: -23.0762614664	RLcost: -1247.02568012	correct: 518.200012207/5000
+Iter[110] lr=0.09
+	GDcost: -23.0739899025	RLcost: -1246.14500173	correct: 504.799987793/5000
+Iter[115] lr=0.09
+	GDcost: -23.0719142453	RLcost: -1245.63793118	correct: 514.400024414/5000
+Iter[120] lr=0.09
+	GDcost: -23.0700101143	RLcost: -1245.42897783	correct: 517.799987793/5000
+Iter[125] lr=0.09
+	GDcost: -23.068257241	RLcost: -1246.01818188	correct: 506.600006104/5000
+Iter[130] lr=0.09
+	GDcost: -23.0666380001	RLcost: -1245.76980321	correct: 516.599975586/5000
+Iter[135] lr=0.09
+	GDcost: -23.0651377229	RLcost: -1245.53543691	correct: 498.0/5000
+Iter[140] lr=0.09
+	GDcost: -23.0637436995	RLcost: -1245.31144143	correct: 509.200012207/5000
+Iter[145] lr=0.09
+	GDcost: -23.0624451964	RLcost: -1245.14570165	correct: 521.0/5000
+
+	acc = 676/7000 = 0.0965714285714
+Iter[150] lr=0.09
+	GDcost: -23.0612328889	RLcost: -1245.26773848	correct: 508.399993896/5000
+Iter[155] lr=0.09
+	GDcost: -23.0600984158	RLcost: -1244.31887174	correct: 515.200012207/5000
+Iter[160] lr=0.09
+	GDcost: -23.0590341698	RLcost: -1244.00773784	correct: 502.200012207/5000
+Iter[165] lr=0.09
+	GDcost: -23.0580339662	RLcost: -1243.93345597	correct: 506.200012207/5000
+Iter[170] lr=0.09
+	GDcost: -23.0570922762	RLcost: -1243.57270697	correct: 518.400024414/5000
+Iter[175] lr=0.09
+	GDcost: -23.0562042323	RLcost: -1243.48706416	correct: 505.799987793/5000
+Iter[180] lr=0.09
+	GDcost: -23.0553651673	RLcost: -1243.37448946	correct: 497.600006104/5000
+Iter[185] lr=0.09
+	GDcost: -23.0545713876	RLcost: -1243.73172522	correct: 509.799987793/5000
+Iter[190] lr=0.09
+	GDcost: -23.0538189074	RLcost: -1243.58567221	correct: 501.0/5000
+Iter[195] lr=0.09
+	GDcost: -23.0531048969	RLcost: -1242.79371628	correct: 501.399993896/5000
+
+	acc = 650/7000 = 0.0928571428571
+Iter[200] lr=0.09
+	GDcost: -23.0524263714	RLcost: -1242.72687807	correct: 517.599975586/5000
+Iter[205] lr=0.09
+	GDcost: -23.051781071	RLcost: -1242.97842538	correct: 491.399993896/5000
+Iter[210] lr=0.09
+	GDcost: -23.051166218	RLcost: -1242.7239786	correct: 495.600006104/5000
+Iter[215] lr=0.09
+	GDcost: -23.0505796803	RLcost: -1242.96294206	correct: 503.200012207/5000
+Iter[220] lr=0.09
+	GDcost: -23.0500197605	RLcost: -1243.04241124	correct: 513.400024414/5000
+Iter[225] lr=0.09
+	GDcost: -23.049484523	RLcost: -1242.93713887	correct: 518.0/5000
+Iter[230] lr=0.09
+	GDcost: -23.0489726046	RLcost: -1242.70829568	correct: 503.200012207/5000
+Iter[235] lr=0.09
+	GDcost: -23.0484822241	RLcost: -1242.77647925	correct: 509.399993896/5000

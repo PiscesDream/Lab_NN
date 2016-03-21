@@ -3,6 +3,7 @@ from NN.RNN.naive import RNN
 
 from NN.common.layers import InputLayer, FullConnectLayer, SoftmaxLayer
 from NN.common.toolkits import generate_wb 
+import sys
 
 import numpy as np
 import theano
@@ -28,7 +29,8 @@ class AttentionUnit(object):
             # x.shape = n * W * H 
 
             # get location vector
-            loc_mean = activation( s_prev.dot(w_l) + b_l )  # n * 2
+#           loc_mean = activation( s_prev.dot(w_l) + b_l )  # n * 2
+            loc_mean = s_prev.dot(w_l) + b_l  # n * 2  TODO
             # glimpse
             glimpse, loc = self._glimpse(x, loc_mean) # n * dim_hidden, n * 2
             # input
@@ -47,8 +49,9 @@ class AttentionUnit(object):
 
         self.output = s.swapaxes(0, 1) # N * Time * dim_hidden
         self.location = loc.swapaxes(0, 1) # N * T * dim_h
-        self.location_mean = loc_mean.swapaxes(0, 1)
-        self.location_logp = - float(1.0/(2.0*rng_std**2)) * ((loc-loc_mean)**2).swapaxes(0,1) 
+        self.location_mean = loc_mean.swapaxes(0, 1) # N * T * 2
+        self.location_logp = (-T.log(T.sqrt(2*np.pi)*rng_std)-((loc-loc_mean)**2)/(2.0*rng_std**2) ).swapaxes(0,1)
+#       self.location_logp = - float(1.0/(2.0*rng_std**2)) * ((loc-loc_mean)**2).swapaxes(0,1)
                 # this part is useless in training >> - T.log(T.sqrt(2*T.pi)*rng_std) 
         self.params = [w_input, w_hidden, b_hidden]
         self.reinforceParams = [w_location, b_location]
@@ -63,10 +66,10 @@ class AttentionUnit(object):
 #       loc = T.cast(self.rng.normal(size=loc_mean.shape, avg=loc_mean, std=self.rng_std), 'int32')
 
         loc = self.rng.normal(size=(x.shape[0], 2), avg=loc_mean, std=self.rng_std)
-        loc = T.cast(T.maximum(loc, 0), 'int32')
+        loc = T.cast(T.maximum(T.round(loc), 0), 'int32') 
         
-        locx = T.minimum(loc[:,0], x.shape[1]-self.glimpse_shape[0]*self.glimpse_shape[2])
-        locy = T.minimum(loc[:,1], x.shape[2]-self.glimpse_shape[1]*self.glimpse_shape[2])
+        locx = T.minimum(loc[:,0], x.shape[1]-self.glimpse_shape[0]-1)  #*self.glimpse_shape[2]
+        locy = T.minimum(loc[:,1], x.shape[2]-self.glimpse_shape[1]-1)  #*self.glimpse_shape[2] 
         def glimpse_each(xi, locxi, locyi):
             return xi[locxi:locxi+self.glimpse_shape[0], locyi:locyi+self.glimpse_shape[1]].flatten()
 #           g = []
@@ -88,8 +91,8 @@ class AttentionUnit(object):
             fn = glimpse_each,
             sequences = [x, locx, locy],
             strict=True)
-        loc = T.stack(locx+self.glimpse_shape[2]*self.glimpse_shape[0]/2, 
-                      locy+self.glimpse_shape[1]*self.glimpse_shape[0]/2).T
+        loc = T.stack(locx+self.glimpse_shape[0]*self.glimpse_shape[2]/2, 
+                      locy+self.glimpse_shape[1]*self.glimpse_shape[2]/2).T
         # x: N * dim_in
         # loc: N * 2
         return x, loc # crop
@@ -107,32 +110,39 @@ class AttentionModel(object):
     
         i = InputLayer(x)
         au = AttentionUnit(x, glimpse_shape, glimpse_times, dim_hidden, rng, rng_std, activation, bptt_truncate)
-        layers = [i, au, InputLayer(au.output[:,:,:].flatten(2))]
-        dim_fc = [glimpse_times*dim_hidden] + dim_fc + [dim_out]
+#       layers = [i, au, InputLayer(au.output[:,:,:].flatten(2))]
+#       dim_fc = [glimpse_times*dim_hidden] + dim_fc + [dim_out]
+        layers = [i, au, InputLayer(au.output[:,-1,:].flatten(2))]
+        dim_fc = [dim_hidden] + dim_fc + [dim_out]
         for Idim, Odim in zip(dim_fc[:-1], dim_fc[1:]):
             fc = FullConnectLayer(layers[-1].output, Idim, Odim, activation, 'FC')
             layers.append(fc)
         sm = SoftmaxLayer(layers[-1].output)
         layers.append(sm)
 
-        output = sm.output       # N * dim_output
+        output = sm.output       # N * classes 
         hidoutput = au.output    # N * dim_output 
         location = au.location   # N * T * dim_hidden
         prediction = output.argmax(1) # N
+
+        # calc
         equalvec = T.eq(prediction, y)
         correct = T.cast(T.sum(equalvec), 'float32')
         noequalvec = T.neq(prediction, y)
         nocorrect = T.cast(T.sum(noequalvec), 'float32')
+        LogLoss = T.log(output)[T.arange(y.shape[0]), y][equalvec]
         
         # gradient descent
-        gdobjective = T.sum( T.log(output)[equalvec] )/x.shape[0]  # correct * dim_output (only has value on the correctly predicted sample)
+        gdobjective = LogLoss.sum()/x.shape[0]  # correct * dim_output (only has value on the correctly predicted sample)
         gdparams = reduce(lambda x, y: x+y.params, layers, []) 
         gdupdates = map(lambda x: (x, x+lr*T.grad(gdobjective, x)), gdparams)
 
         # reinforce learning
-        rlobjective = au.location_logp[equalvec].sum()/x.shape[0]
+#       rlobjective = au.location_logp[equalvec].sum()/x.shape[0]
+        # LogLoss is reward, gradient is gradient
+        rlobjective = reward_coef*au.location_logp[equalvec][:,:,:].sum() /x.shape[0]
         rlparams = au.reinforceParams 
-        rlupdates = map(lambda x: (x, x+lr*reward_coef*T.grad(rlobjective, x)), rlparams)
+        rlupdates = map(lambda x: (x, x+lr*T.grad(rlobjective, x)), rlparams)
          
         print 'compile step()'
         self.step = theano.function([x, y, lr], [gdobjective, rlobjective, correct], updates=gdupdates+rlupdates)
@@ -149,7 +159,7 @@ class AttentionModel(object):
         print 'compile locate()'
         self.locate = theano.function([x], location) #[layers[-3].output, fc.output])
         print 'compile debug()'
-        self.debug = theano.function([x, y, lr], au.output, on_unused_input='warn')
+        self.debug = theano.function([x, y, lr], au.location_mean, on_unused_input='warn')
 
 
     def fit(self, x, y, 
@@ -164,6 +174,10 @@ class AttentionModel(object):
         valx, valy = val if val !=None else (x, y)
 
         batch_count = len(x)/batch_size
+        
+        np.set_printoptions(precision=3)
+        def npinline(x):
+            return map(lambda loc: tuple(map(lambda loci: round(loci, 3), loc)), x.tolist())
 
         lastcost = np.inf
         gdcost = []
@@ -191,7 +205,14 @@ class AttentionModel(object):
             if i % disp_iter == 0: 
                 print 'Iter[{}] lr={}'.format(i, lr)
                 print '\tGDcost: {}\tRLcost: {}\tcorrect: {}/{}'.\
-                    format(np.mean(gdcost), np.mean(rlcost), np.mean(correct), batch_size)
+                    format(np.mean(gdcost), np.mean(rlcost), np.mean(correct), batch_size) 
+                print '\ty: {}'.format(y[0])
+                print '\tloc_mean: {}'.format( npinline(self.debug([x[0]], [y[0]], lr).reshape(-1, 2)) )
+                print '\tlocation: {}'.format( npinline(self.locate([x[0]]).reshape(-1, 2)) )
+#               print '\tloc_mean: {}'.format( npinline(self.debug(x[start:end], y[start:end], lr)[0].reshape(-1, 2)) )
+#               print '\tlocation: {}'.format( npinline(self.locate(x[start:end])[0].reshape(-1, 2)) )
+                sys.stdout.flush()
                 cost = []
                 correct = [] 
  
+

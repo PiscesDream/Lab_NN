@@ -1,1 +1,1290 @@
 Using gpu device 1: GeForce GTX TITAN X
+/home/shaofan/.local/lib/python2.7/site-packages/theano/scan_module/scan.py:1017: Warning: In the strict mode, all neccessary shared variables must be passed as a part of non_sequences
+  'must be passed as a part of non_sequences', Warning)
+/home/shaofan/.local/lib/python2.7/site-packages/theano/scan_module/scan_perform_ext.py:133: RuntimeWarning: numpy.ndarray size changed, may indicate binary incompatibility
+  from scan_perform.scan_perform import *
+/home/shaofan/Projects/NN/NN/RNN/attention/glimpse.py:153: UserWarning: theano.function was asked to create a function computing outputs given certain inputs, but the provided input variable at index 1 is not part of the computational graph needed to compute the outputs: y.
+To make this warning into an error, you can pass the parameter on_unused_input='raise' to theano.function. To disable it completely, use on_unused_input='ignore'.
+  self.debug = theano.function([x, y, lr], au.output, on_unused_input='warn')
+/home/shaofan/Projects/NN/NN/RNN/attention/glimpse.py:153: UserWarning: theano.function was asked to create a function computing outputs given certain inputs, but the provided input variable at index 2 is not part of the computational graph needed to compute the outputs: lr.
+To make this warning into an error, you can pass the parameter on_unused_input='raise' to theano.function. To disable it completely, use on_unused_input='ignore'.
+  self.debug = theano.function([x, y, lr], au.output, on_unused_input='warn')
+(70000, 28, 28)
+(70000,)
+compile step()
+compile predict()
+compile forward()
+compile error()
+compile locate()
+compile debug()
+
+	acc = 710/7000 = 0.101428571429
+Iter[0] lr=0.009
+	GDcost: -26.8720531464	RLcost: -10181.2936321	correct: 515.0/5000
+Iter[5] lr=0.009
+	GDcost: -24.161637942	RLcost: -10146.1140623	correct: 440.200012207/5000
+Iter[10] lr=0.009
+	GDcost: -23.7161083221	RLcost: -10124.0309153	correct: 475.200012207/5000
+Iter[15] lr=0.009
+	GDcost: -23.5109416246	RLcost: -10084.5288025	correct: 441.200012207/5000
+Iter[20] lr=0.009
+	GDcost: -23.5809426989	RLcost: -10098.8257331	correct: 454.399993896/5000
+Iter[25] lr=0.009
+	GDcost: -23.5559244889	RLcost: -10102.6380454	correct: 440.399993896/5000
+Iter[30] lr=0.009
+	GDcost: -23.4757858399	RLcost: -10087.250962	correct: 450.200012207/5000
+Iter[35] lr=0.009
+	GDcost: -23.4640205171	RLcost: -10070.5744071	correct: 440.799987793/5000
+Iter[40] lr=0.009
+	GDcost: -23.5783143392	RLcost: -10050.235672	correct: 438.799987793/5000
+Iter[45] lr=0.009
+	GDcost: -23.5787441005	RLcost: -10038.0136337	correct: 465.600006104/5000
+
+	acc = 627/7000 = 0.0895714285714
+Iter[50] lr=0.009
+	GDcost: -23.5400176329	RLcost: -10033.8818617	correct: 435.799987793/5000
+Iter[55] lr=0.009
+	GDcost: -23.5231040886	RLcost: -10041.9754007	correct: 450.600006104/5000
+Iter[60] lr=0.009
+	GDcost: -23.518634077	RLcost: -10035.5097926	correct: 441.399993896/5000
+Iter[65] lr=0.009
+	GDcost: -23.4829576666	RLcost: -10015.8388089	correct: 427.0/5000
+Iter[70] lr=0.009
+	GDcost: -23.4534584905	RLcost: -10000.1406738	correct: 430.200012207/5000
+Iter[75] lr=0.009
+	GDcost: -23.4254709545	RLcost: -9986.70275031	correct: 455.0/5000
+Iter[80] lr=0.009
+	GDcost: -23.4203824173	RLcost: -9983.19665543	correct: 433.600006104/5000
+Iter[85] lr=0.009
+	GDcost: -23.3974433278	RLcost: -9983.28279984	correct: 437.399993896/5000
+Iter[90] lr=0.009
+	GDcost: -23.3956223582	RLcost: -9983.09699778	correct: 439.799987793/5000
+Iter[95] lr=0.009
+	GDcost: -23.3865899642	RLcost: -9982.43913704	correct: 442.799987793/5000
+
+	acc = 593/7000 = 0.0847142857143
+Iter[100] lr=0.009
+	GDcost: -23.3784213869	RLcost: -9980.23407248	correct: 432.799987793/5000
+Iter[105] lr=0.009
+	GDcost: -23.3620603669	RLcost: -9979.96342059	correct: 455.799987793/5000
+Iter[110] lr=0.009
+	GDcost: -23.3470122535	RLcost: -9981.75493873	correct: 452.399993896/5000
+Iter[115] lr=0.009
+	GDcost: -23.3346904064	RLcost: -9983.13043179	correct: 450.0/5000
+Iter[120] lr=0.009
+	GDcost: -23.3219397521	RLcost: -9988.95254568	correct: 444.0/5000
+Iter[125] lr=0.009
+	GDcost: -23.3101897013	RLcost: -9990.1977476	correct: 465.0/5000
+Iter[130] lr=0.009
+	GDcost: -23.2993363242	RLcost: -9985.58055947	correct: 447.399993896/5000
+Iter[135] lr=0.009
+	GDcost: -23.2892812701	RLcost: -9978.66260317	correct: 443.600006104/5000
+Iter[140] lr=0.009
+	GDcost: -23.2799393268	RLcost: -9976.58881246	correct: 436.0/5000
+Iter[145] lr=0.009
+	GDcost: -23.2712459564	RLcost: -9976.41849712	correct: 433.600006104/5000
+
+	acc = 571/7000 = 0.0815714285714
+Iter[150] lr=0.009
+	GDcost: -23.2631198049	RLcost: -9972.39151581	correct: 442.799987793/5000
+Iter[155] lr=0.009
+	GDcost: -23.2555145606	RLcost: -9975.91154337	correct: 432.0/5000
+Iter[160] lr=0.009
+	GDcost: -23.2483821182	RLcost: -9977.0608633	correct: 450.399993896/5000
+Iter[165] lr=0.009
+	GDcost: -23.2416790767	RLcost: -9979.6469339	correct: 436.0/5000
+Iter[170] lr=0.009
+	GDcost: -23.235466483	RLcost: -9977.02775579	correct: 448.600006104/5000
+Iter[175] lr=0.009
+	GDcost: -23.2295109359	RLcost: -9972.16995663	correct: 437.200012207/5000
+Iter[180] lr=0.009
+	GDcost: -23.2238845509	RLcost: -9970.54499663	correct: 460.600006104/5000
+Iter[185] lr=0.009
+	GDcost: -23.2185607418	RLcost: -9973.53374779	correct: 434.0/5000
+Iter[190] lr=0.009
+	GDcost: -23.2135156462	RLcost: -9978.18814524	correct: 445.0/5000
+Iter[195] lr=0.009
+	GDcost: -23.2117252253	RLcost: -9976.77558639	correct: 437.399993896/5000
+
+	acc = 560/7000 = 0.08
+Iter[200] lr=0.009
+	GDcost: -23.2074015983	RLcost: -9972.21948865	correct: 441.200012207/5000
+Iter[205] lr=0.009
+	GDcost: -23.2030092999	RLcost: -9972.06538181	correct: 441.0/5000
+Iter[210] lr=0.009
+	GDcost: -23.2071884933	RLcost: -9972.36029527	correct: 426.600006104/5000
+Iter[215] lr=0.009
+	GDcost: -23.2058643588	RLcost: -9971.39743366	correct: 437.600006104/5000
+Iter[220] lr=0.009
+	GDcost: -23.2056924552	RLcost: -9970.71932942	correct: 428.399993896/5000
+Iter[225] lr=0.009
+	GDcost: -23.2017134185	RLcost: -9970.45406144	correct: 440.0/5000
+Iter[230] lr=0.009
+	GDcost: -23.2084390467	RLcost: -9973.12705909	correct: 437.799987793/5000
+Iter[235] lr=0.009
+	GDcost: -23.2045704793	RLcost: -9973.76135086	correct: 434.600006104/5000
+Iter[240] lr=0.009
+	GDcost: -23.2011228221	RLcost: -9974.44102596	correct: 429.600006104/5000
+Iter[245] lr=0.009
+	GDcost: -23.1975658386	RLcost: -9974.57686665	correct: 424.200012207/5000
+
+	acc = 606/7000 = 0.0865714285714
+Iter[250] lr=0.009
+	GDcost: -23.1941447847	RLcost: -9971.97186106	correct: 435.200012207/5000
+Iter[255] lr=0.009
+	GDcost: -23.1908578277	RLcost: -9970.14181132	correct: 434.200012207/5000
+Iter[260] lr=0.009
+	GDcost: -23.1876990147	RLcost: -9968.1225542	correct: 413.399993896/5000
+Iter[265] lr=0.009
+	GDcost: -23.1846564874	RLcost: -9969.64244694	correct: 442.399993896/5000
+Iter[270] lr=0.009
+	GDcost: -23.1817261812	RLcost: -9972.95287645	correct: 428.600006104/5000
+Iter[275] lr=0.009
+	GDcost: -23.17898062	RLcost: -9973.32817066	correct: 437.600006104/5000
+Iter[280] lr=0.009
+	GDcost: -23.1762560644	RLcost: -9976.92215056	correct: 444.399993896/5000
+Iter[285] lr=0.009
+	GDcost: -23.1737756863	RLcost: -9980.89463277	correct: 421.0/5000
+Iter[290] lr=0.009
+	GDcost: -23.1785611877	RLcost: -9981.31153577	correct: 430.600006104/5000
+Iter[295] lr=0.009
+	GDcost: -23.1759812703	RLcost: -9980.60031459	correct: 433.799987793/5000
+
+	acc = 592/7000 = 0.0845714285714
+Iter[300] lr=0.009
+	GDcost: -23.1734927738	RLcost: -9983.45937299	correct: 423.600006104/5000
+Iter[305] lr=0.009
+	GDcost: -23.1710802714	RLcost: -9984.57958812	correct: 434.799987793/5000
+Iter[310] lr=0.009
+	GDcost: -23.16904991	RLcost: -9983.02986743	correct: 451.200012207/5000
+Iter[315] lr=0.009
+	GDcost: -23.1745426142	RLcost: -9984.39036869	correct: 434.200012207/5000
+Iter[320] lr=0.009
+	GDcost: -23.1725296484	RLcost: -9985.13791272	correct: 434.200012207/5000
+Iter[325] lr=0.009
+	GDcost: -23.1702796784	RLcost: -9983.05872816	correct: 437.600006104/5000
+Iter[330] lr=0.009
+	GDcost: -23.1680975969	RLcost: -9982.27780799	correct: 438.200012207/5000
+Iter[335] lr=0.009
+	GDcost: -23.1659804639	RLcost: -9982.56588508	correct: 431.799987793/5000
+Iter[340] lr=0.009
+	GDcost: -23.1641716272	RLcost: -9982.12325322	correct: 424.200012207/5000
+Iter[345] lr=0.009
+	GDcost: -23.162172968	RLcost: -9981.07157609	correct: 436.0/5000
+
+	acc = 644/7000 = 0.092
+Iter[350] lr=0.009
+	GDcost: -23.1602309518	RLcost: -9979.34192123	correct: 423.200012207/5000
+Iter[355] lr=0.009
+	GDcost: -23.1583473013	RLcost: -9979.09531861	correct: 423.399993896/5000
+Iter[360] lr=0.009
+	GDcost: -23.1565120253	RLcost: -9981.89929589	correct: 411.0/5000
+Iter[365] lr=0.009
+	GDcost: -23.1547270186	RLcost: -9982.34211181	correct: 441.799987793/5000
+Iter[370] lr=0.009
+	GDcost: -23.1532431548	RLcost: -9981.41688592	correct: 441.200012207/5000
+Iter[375] lr=0.009
+	GDcost: -23.1515512822	RLcost: -9979.50317769	correct: 455.200012207/5000
+Iter[380] lr=0.009
+	GDcost: -23.1499027492	RLcost: -9978.54519274	correct: 425.600006104/5000
+Iter[385] lr=0.009
+	GDcost: -23.1483615124	RLcost: -9977.83422395	correct: 423.200012207/5000
+Iter[390] lr=0.009
+	GDcost: -23.1469957054	RLcost: -9975.83132427	correct: 434.0/5000
+Iter[395] lr=0.009
+	GDcost: -23.1454659809	RLcost: -9975.05565653	correct: 430.600006104/5000
+
+	acc = 593/7000 = 0.0847142857143
+Iter[400] lr=0.009
+	GDcost: -23.1466388465	RLcost: -9974.756446	correct: 420.399993896/5000
+Iter[405] lr=0.009
+	GDcost: -23.1451510866	RLcost: -9974.12977792	correct: 431.200012207/5000
+Iter[410] lr=0.009
+	GDcost: -23.1436994418	RLcost: -9972.34884709	correct: 418.799987793/5000
+Iter[415] lr=0.009
+	GDcost: -23.1422827565	RLcost: -9971.9762082	correct: 420.0/5000
+Iter[420] lr=0.009
+	GDcost: -23.1408996809	RLcost: -9970.61850917	correct: 421.799987793/5000
+Iter[425] lr=0.009
+	GDcost: -23.1395490628	RLcost: -9968.5737672	correct: 425.200012207/5000
+Iter[430] lr=0.009
+	GDcost: -23.1382298304	RLcost: -9966.96368551	correct: 430.399993896/5000
+Iter[435] lr=0.009
+	GDcost: -23.1369408118	RLcost: -9966.13584197	correct: 439.600006104/5000
+Iter[440] lr=0.009
+	GDcost: -23.1356811134	RLcost: -9966.96463807	correct: 429.0/5000
+Iter[445] lr=0.009
+	GDcost: -23.1344699047	RLcost: -9967.17086358	correct: 423.799987793/5000
+
+	acc = 592/7000 = 0.0845714285714
+Iter[450] lr=0.009
+	GDcost: -23.133407098	RLcost: -9966.48268135	correct: 415.399993896/5000
+Iter[455] lr=0.009
+	GDcost: -23.1322800277	RLcost: -9966.27100563	correct: 446.399993896/5000
+Iter[460] lr=0.009
+	GDcost: -23.1311255101	RLcost: -9966.7926677	correct: 432.799987793/5000
+Iter[465] lr=0.009
+	GDcost: -23.1305134122	RLcost: -9966.71197251	correct: 422.0/5000
+Iter[470] lr=0.009
+	GDcost: -23.1294022457	RLcost: -9966.0629552	correct: 423.200012207/5000
+Iter[475] lr=0.009
+	GDcost: -23.1283142867	RLcost: -9964.96567255	correct: 421.399993896/5000
+Iter[480] lr=0.009
+	GDcost: -23.1273210371	RLcost: -9965.01431688	correct: 421.799987793/5000
+Iter[485] lr=0.009
+	GDcost: -23.1263805436	RLcost: -9965.26634301	correct: 434.799987793/5000
+Iter[490] lr=0.009
+	GDcost: -23.1253836995	RLcost: -9965.80298656	correct: 423.200012207/5000
+Iter[495] lr=0.009
+	GDcost: -23.1244268687	RLcost: -9967.14902368	correct: 427.200012207/5000
+
+	acc = 609/7000 = 0.087
+Iter[500] lr=0.009
+	GDcost: -23.1234428269	RLcost: -9967.83102736	correct: 429.0/5000
+Iter[505] lr=0.009
+	GDcost: -23.1224784097	RLcost: -9967.64228958	correct: 441.799987793/5000
+Iter[510] lr=0.009
+	GDcost: -23.1217366049	RLcost: -9966.61256925	correct: 431.600006104/5000
+Iter[515] lr=0.009
+	GDcost: -23.1208072337	RLcost: -9965.97700962	correct: 418.0/5000
+Iter[520] lr=0.009
+	GDcost: -23.1199304943	RLcost: -9965.50881612	correct: 425.200012207/5000
+Iter[525] lr=0.009
+	GDcost: -23.1190364678	RLcost: -9964.26588471	correct: 414.799987793/5000
+Iter[530] lr=0.009
+	GDcost: -23.1182210674	RLcost: -9963.20366763	correct: 431.200012207/5000
+Iter[535] lr=0.009
+	GDcost: -23.1173591721	RLcost: -9963.48011729	correct: 417.600006104/5000
+Iter[540] lr=0.009
+	GDcost: -23.1165175623	RLcost: -9963.35836728	correct: 417.600006104/5000
+Iter[545] lr=0.009
+	GDcost: -23.115799558	RLcost: -9962.74913097	correct: 422.0/5000
+
+	acc = 590/7000 = 0.0842857142857
+Iter[550] lr=0.009
+	GDcost: -23.1157295345	RLcost: -9962.73215949	correct: 428.399993896/5000
+Iter[555] lr=0.009
+	GDcost: -23.1149210964	RLcost: -9962.043029	correct: 448.799987793/5000
+Iter[560] lr=0.009
+	GDcost: -23.1141270214	RLcost: -9962.62292799	correct: 426.200012207/5000
+Iter[565] lr=0.009
+	GDcost: -23.1152866047	RLcost: -9963.70272879	correct: 425.600006104/5000
+Iter[570] lr=0.009
+	GDcost: -23.1145032793	RLcost: -9963.10496466	correct: 427.0/5000
+Iter[575] lr=0.009
+	GDcost: -23.1146972179	RLcost: -9963.9441748	correct: 441.200012207/5000
+Iter[580] lr=0.009
+	GDcost: -23.1139324109	RLcost: -9965.16618848	correct: 436.799987793/5000
+Iter[585] lr=0.009
+	GDcost: -23.1132095845	RLcost: -9965.77553946	correct: 430.799987793/5000
+Iter[590] lr=0.009
+	GDcost: -23.1124702944	RLcost: -9965.43964454	correct: 411.799987793/5000
+Iter[595] lr=0.009
+	GDcost: -23.1117844742	RLcost: -9964.70808535	correct: 424.200012207/5000
+
+	acc = 630/7000 = 0.09
+Iter[600] lr=0.009
+	GDcost: -23.1110918201	RLcost: -9963.90149413	correct: 409.200012207/5000
+Iter[605] lr=0.009
+	GDcost: -23.1103883089	RLcost: -9962.59605832	correct: 430.600006104/5000
+Iter[610] lr=0.009
+	GDcost: -23.1096963118	RLcost: -9962.80338901	correct: 415.399993896/5000
+Iter[615] lr=0.009
+	GDcost: -23.1090348882	RLcost: -9964.84348496	correct: 418.799987793/5000
+Iter[620] lr=0.009
+	GDcost: -23.1083687031	RLcost: -9965.97914904	correct: 418.600006104/5000
+Iter[625] lr=0.009
+	GDcost: -23.1077094246	RLcost: -9967.06991026	correct: 440.399993896/5000
+Iter[630] lr=0.009
+	GDcost: -23.1080385411	RLcost: -9968.41267254	correct: 438.200012207/5000
+Iter[635] lr=0.009
+	GDcost: -23.1073922211	RLcost: -9968.73479713	correct: 423.200012207/5000
+Iter[640] lr=0.009
+	GDcost: -23.1067559782	RLcost: -9967.41887658	correct: 431.799987793/5000
+Iter[645] lr=0.009
+	GDcost: -23.1063024031	RLcost: -9966.66745987	correct: 420.0/5000
+
+	acc = 620/7000 = 0.0885714285714
+Iter[650] lr=0.009
+	GDcost: -23.1056843331	RLcost: -9966.58372776	correct: 423.399993896/5000
+Iter[655] lr=0.009
+	GDcost: -23.1055630678	RLcost: -9965.90433048	correct: 426.799987793/5000
+Iter[660] lr=0.009
+	GDcost: -23.1049797906	RLcost: -9965.18051878	correct: 413.0/5000
+Iter[665] lr=0.009
+	GDcost: -23.1043856223	RLcost: -9964.44476532	correct: 433.399993896/5000
+Iter[670] lr=0.009
+	GDcost: -23.1049815461	RLcost: -9965.11342259	correct: 436.399993896/5000
+Iter[675] lr=0.009
+	GDcost: -23.1044019214	RLcost: -9965.61320829	correct: 436.0/5000
+Iter[680] lr=0.009
+	GDcost: -23.1041655323	RLcost: -9966.06004729	correct: 425.200012207/5000
+Iter[685] lr=0.009
+	GDcost: -23.104108702	RLcost: -9965.88186212	correct: 415.600006104/5000
+Iter[690] lr=0.009
+	GDcost: -23.1035422699	RLcost: -9965.91778662	correct: 428.399993896/5000
+Iter[695] lr=0.009
+	GDcost: -23.1029840913	RLcost: -9965.58100014	correct: 419.399993896/5000
+
+	acc = 628/7000 = 0.0897142857143
+Iter[700] lr=0.009
+	GDcost: -23.1024345175	RLcost: -9965.41688401	correct: 418.799987793/5000
+Iter[705] lr=0.009
+	GDcost: -23.1018920526	RLcost: -9965.26805885	correct: 403.399993896/5000
+Iter[710] lr=0.009
+	GDcost: -23.1013571931	RLcost: -9966.86588415	correct: 418.799987793/5000
+Iter[715] lr=0.009
+	GDcost: -23.1008306429	RLcost: -9967.72677067	correct: 446.399993896/5000
+Iter[720] lr=0.009
+	GDcost: -23.1016535422	RLcost: -9967.39159008	correct: 422.0/5000
+Iter[725] lr=0.009
+	GDcost: -23.1013084154	RLcost: -9966.29512495	correct: 423.399993896/5000
+Iter[730] lr=0.009
+	GDcost: -23.1007921164	RLcost: -9965.1421039	correct: 433.799987793/5000
+Iter[735] lr=0.009
+	GDcost: -23.1011177198	RLcost: -9965.24513193	correct: 409.399993896/5000
+Iter[740] lr=0.009
+	GDcost: -23.1006096803	RLcost: -9965.07291025	correct: 417.0/5000
+Iter[745] lr=0.009
+	GDcost: -23.1001084509	RLcost: -9964.43071873	correct: 428.799987793/5000
+
+	acc = 608/7000 = 0.0868571428571
+Iter[750] lr=0.009
+	GDcost: -23.0996189143	RLcost: -9963.56745148	correct: 408.600006104/5000
+Iter[755] lr=0.009
+	GDcost: -23.0991309332	RLcost: -9963.2333916	correct: 425.399993896/5000
+Iter[760] lr=0.009
+	GDcost: -23.0986493245	RLcost: -9962.78456729	correct: 410.799987793/5000
+Iter[765] lr=0.009
+	GDcost: -23.0986784146	RLcost: -9963.16126115	correct: 429.0/5000
+Iter[770] lr=0.009
+	GDcost: -23.0982059919	RLcost: -9962.42651177	correct: 427.200012207/5000
+Iter[775] lr=0.009
+	GDcost: -23.0977396277	RLcost: -9961.74131149	correct: 402.600006104/5000
+Iter[780] lr=0.009
+	GDcost: -23.0972792886	RLcost: -9961.83843296	correct: 415.200012207/5000
+Iter[785] lr=0.009
+	GDcost: -23.097422743	RLcost: -9961.56169415	correct: 416.200012207/5000
+Iter[790] lr=0.009
+	GDcost: -23.0970026081	RLcost: -9961.01449778	correct: 427.600006104/5000
+Iter[795] lr=0.009
+	GDcost: -23.0965557194	RLcost: -9961.3644121	correct: 435.0/5000
+
+	acc = 592/7000 = 0.0845714285714
+Iter[800] lr=0.009
+	GDcost: -23.096167156	RLcost: -9962.37796203	correct: 412.399993896/5000
+Iter[805] lr=0.009
+	GDcost: -23.0957307958	RLcost: -9962.88652078	correct: 422.0/5000
+Iter[810] lr=0.009
+	GDcost: -23.095299816	RLcost: -9963.3552021	correct: 435.200012207/5000
+Iter[815] lr=0.009
+	GDcost: -23.0948773716	RLcost: -9963.50464462	correct: 425.799987793/5000
+Iter[820] lr=0.009
+	GDcost: -23.0944568759	RLcost: -9964.13581443	correct: 418.399993896/5000
+Iter[825] lr=0.009
+	GDcost: -23.0940414595	RLcost: -9965.2667473	correct: 420.600006104/5000
+Iter[830] lr=0.009
+	GDcost: -23.0936310765	RLcost: -9966.69279048	correct: 419.200012207/5000
+Iter[835] lr=0.009
+	GDcost: -23.093225543	RLcost: -9967.29466964	correct: 420.799987793/5000
+Iter[840] lr=0.009
+	GDcost: -23.0928248293	RLcost: -9966.56980161	correct: 418.600006104/5000
+Iter[845] lr=0.009
+	GDcost: -23.0924289198	RLcost: -9965.81722288	correct: 415.0/5000
+
+	acc = 594/7000 = 0.0848571428571
+Iter[850] lr=0.009
+	GDcost: -23.0920376268	RLcost: -9965.40505967	correct: 409.0/5000
+Iter[855] lr=0.009
+	GDcost: -23.0916509027	RLcost: -9964.76305868	correct: 408.799987793/5000
+Iter[860] lr=0.009
+	GDcost: -23.0912686413	RLcost: -9964.3511638	correct: 432.600006104/5000
+Iter[865] lr=0.009
+	GDcost: -23.0908907919	RLcost: -9963.8584389	correct: 438.600006104/5000
+Iter[870] lr=0.009
+	GDcost: -23.0905172828	RLcost: -9963.48342969	correct: 423.600006104/5000
+Iter[875] lr=0.009
+	GDcost: -23.0901480396	RLcost: -9963.46943906	correct: 411.399993896/5000
+Iter[880] lr=0.009
+	GDcost: -23.0897829898	RLcost: -9962.8445906	correct: 426.399993896/5000
+Iter[885] lr=0.009
+	GDcost: -23.089422086	RLcost: -9962.01745362	correct: 427.0/5000
+Iter[890] lr=0.009
+	GDcost: -23.0891546513	RLcost: -9962.38576914	correct: 414.799987793/5000
+Iter[895] lr=0.009
+	GDcost: -23.0888013201	RLcost: -9962.79844752	correct: 435.399993896/5000
+
+	acc = 655/7000 = 0.0935714285714
+Iter[900] lr=0.009
+	GDcost: -23.0884689263	RLcost: -9963.06686132	correct: 410.600006104/5000
+Iter[905] lr=0.009
+	GDcost: -23.0881236331	RLcost: -9962.6475609	correct: 436.799987793/5000
+Iter[910] lr=0.009
+	GDcost: -23.0877838093	RLcost: -9962.17382016	correct: 408.200012207/5000
+Iter[915] lr=0.009
+	GDcost: -23.087445813	RLcost: -9961.97311485	correct: 417.399993896/5000
+Iter[920] lr=0.009
+	GDcost: -23.0871113644	RLcost: -9961.92054307	correct: 437.0/5000
+Iter[925] lr=0.009
+	GDcost: -23.0867806058	RLcost: -9961.86848628	correct: 423.0/5000
+Iter[930] lr=0.009
+	GDcost: -23.0864532401	RLcost: -9961.1617081	correct: 423.600006104/5000
+Iter[935] lr=0.009
+	GDcost: -23.0861293903	RLcost: -9961.13635442	correct: 431.799987793/5000
+Iter[940] lr=0.009
+	GDcost: -23.086517261	RLcost: -9961.24120802	correct: 413.600006104/5000
+Iter[945] lr=0.009
+	GDcost: -23.086196599	RLcost: -9961.42366613	correct: 412.600006104/5000
+
+	acc = 593/7000 = 0.0847142857143
+Iter[950] lr=0.009
+	GDcost: -23.0858792105	RLcost: -9961.268722	correct: 435.200012207/5000
+Iter[955] lr=0.009
+	GDcost: -23.0855651241	RLcost: -9961.26351581	correct: 421.600006104/5000
+Iter[960] lr=0.009
+	GDcost: -23.085254439	RLcost: -9960.97498763	correct: 412.399993896/5000
+Iter[965] lr=0.009
+	GDcost: -23.084946972	RLcost: -9960.77063574	correct: 427.399993896/5000
+Iter[970] lr=0.009
+	GDcost: -23.0846426597	RLcost: -9960.2023441	correct: 439.399993896/5000
+Iter[975] lr=0.009
+	GDcost: -23.0843413482	RLcost: -9959.36191355	correct: 410.799987793/5000
+Iter[980] lr=0.009
+	GDcost: -23.0840431237	RLcost: -9959.15682477	correct: 434.799987793/5000
+Iter[985] lr=0.009
+	GDcost: -23.083747945	RLcost: -9958.41227637	correct: 422.200012207/5000
+Iter[990] lr=0.009
+	GDcost: -23.0837671778	RLcost: -9957.98403982	correct: 422.0/5000
+Iter[995] lr=0.009
+	GDcost: -23.0834763098	RLcost: -9957.7055246	correct: 425.799987793/5000
+
+	acc = 591/7000 = 0.0844285714286
+Iter[1000] lr=0.0081
+	GDcost: -23.0831883475	RLcost: -9957.07590619	correct: 429.0/5000
+Iter[1005] lr=0.0081
+	GDcost: -23.0829034809	RLcost: -9956.91955725	correct: 417.600006104/5000
+Iter[1010] lr=0.0081
+	GDcost: -23.082621249	RLcost: -9956.82405597	correct: 438.399993896/5000
+Iter[1015] lr=0.0081
+	GDcost: -23.0823417423	RLcost: -9956.95878119	correct: 429.799987793/5000
+Iter[1020] lr=0.0081
+	GDcost: -23.0821012783	RLcost: -9956.93166517	correct: 415.0/5000
+Iter[1025] lr=0.0081
+	GDcost: -23.0819865091	RLcost: -9956.77019467	correct: 423.399993896/5000
+Iter[1030] lr=0.0081
+	GDcost: -23.0817141935	RLcost: -9956.06200233	correct: 418.0/5000
+Iter[1035] lr=0.0081
+	GDcost: -23.0815023437	RLcost: -9955.39822404	correct: 416.0/5000
+Iter[1040] lr=0.0081
+	GDcost: -23.0812349805	RLcost: -9955.68078651	correct: 437.0/5000
+Iter[1045] lr=0.0081
+	GDcost: -23.0809701424	RLcost: -9956.2702463	correct: 432.600006104/5000
+
+	acc = 579/7000 = 0.0827142857143
+Iter[1050] lr=0.0081
+	GDcost: -23.0807078477	RLcost: -9956.77372499	correct: 429.399993896/5000
+Error allocating 10000000 bytes of device memory (out of memory). Driver report 8941568 bytes free and 12884705280 bytes total 
+Traceback (most recent call last):
+  File "tests/glimpse.py", line 48, in <module>
+    val=(testx, testy))
+  File "/home/shaofan/Projects/NN/NN/RNN/attention/glimpse.py", line 187, in fit
+    start = batch_index*batch_size
+  File "/home/shaofan/.local/lib/python2.7/site-packages/theano/compile/function_module.py", line 606, in __call__
+    storage_map=self.fn.storage_map)
+  File "/home/shaofan/.local/lib/python2.7/site-packages/theano/compile/function_module.py", line 595, in __call__
+    outputs = self.fn()
+  File "/home/shaofan/.local/lib/python2.7/site-packages/theano/scan_module/scan_op.py", line 672, in rval
+    r = p(n, [x[0] for x in i], o)
+  File "/home/shaofan/.local/lib/python2.7/site-packages/theano/scan_module/scan_op.py", line 661, in <lambda>
+    self, node)
+  File "scan_perform.pyx", line 356, in theano.scan_module.scan_perform.perform (/home/shaofan/.theano/compiledir_Linux-3.13--generic-x86_64-with-Ubuntu-14.04-trusty-x86_64-2.7.6-64/scan_perform/mod.cpp:3605)
+  File "scan_perform.pyx", line 350, in theano.scan_module.scan_perform.perform (/home/shaofan/.theano/compiledir_Linux-3.13--generic-x86_64-with-Ubuntu-14.04-trusty-x86_64-2.7.6-64/scan_perform/mod.cpp:3537)
+MemoryError: Error allocating 10000000 bytes of device memory (out of memory).
+Apply node that caused the error: GpuElemwise{Composite{tanh((i0 + i1))},no_inplace}(<CudaNdarrayType(float32, row)>, GpuGemm{inplace}.0)
+Inputs types: [CudaNdarrayType(float32, row), CudaNdarrayType(float32, matrix)]
+
+Debugprint of the apply node: 
+GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@A] <CudaNdarrayType(float32, matrix)> ''   
+ |<CudaNdarrayType(float32, row)> [@B] <CudaNdarrayType(float32, row)>
+ |GpuGemm{inplace} [@C] <CudaNdarrayType(float32, matrix)> ''   
+   |GpuDot22 [@D] <CudaNdarrayType(float32, matrix)> ''   
+   | |for{gpu,scan_fn} [@E] <CudaNdarrayType(float32, matrix)> ''   
+   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@F] <TensorType(int64, scalar)> ''   
+   | | | |<TensorType(int64, scalar)> [@G] <TensorType(int64, scalar)>
+   | | | |Shape_i{0} [@H] <TensorType(int64, scalar)> ''   
+   | | |   |<CudaNdarrayType(float32, matrix)> [@I] <CudaNdarrayType(float32, matrix)>
+   | | |Elemwise{add,no_inplace} [@J] <TensorType(int64, vector)> ''   
+   | | | |TensorConstant{(1,) of 10} [@K] <TensorType(int64, (True,))>
+   | | | |Subtensor{int64:int64:int8} [@L] <TensorType(int64, vector)> ''   
+   | | |   |Elemwise{minimum,no_inplace} [@M] <TensorType(int64, vector)> ''   
+   | | |   | |Subtensor{::, int64} [@N] <TensorType(int32, vector)> ''   
+   | | |   | | |Elemwise{Cast{int32}} [@O] <TensorType(int32, matrix)> ''   
+   | | |   | | | |HostFromGpu [@P] <TensorType(float32, matrix)> ''   
+   | | |   | | |   |GpuElemwise{Composite{maximum((i0 + i1), i2)}}[(0, 1)] [@Q] <CudaNdarrayType(float32, matrix)> ''   
+   | | |   | | |     |GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@R] <CudaNdarrayType(float32, matrix)> ''   
+   | | |   | | |     | |GpuDot22 [@S] <CudaNdarrayType(float32, matrix)> ''   
+   | | |   | | |     | | |<CudaNdarrayType(float32, matrix)> [@I] <CudaNdarrayType(float32, matrix)>
+   | | |   | | |     | | |w_AttentionModel->location_copy0[cuda] [@T] <CudaNdarrayType(float32, matrix)>
+   | | |   | | |     | |<CudaNdarrayType(float32, row)> [@U] <CudaNdarrayType(float32, row)>
+   | | |   | | |     |GpuReshape{2} [@V] <CudaNdarrayType(float32, matrix)> ''   
+   | | |   | | |     | |GpuSubtensor{:int64:} [@W] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | |GpuJoin [@X] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | | |TensorConstant{0} [@Y] <TensorType(int8, scalar)>
+   | | |   | | |     | | | |GpuElemwise{Composite{(i0 * cos(i1))},no_inplace} [@Z] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | | | |GpuElemwise{Composite{sqrt((i0 * log(i1)))},no_inplace} [@BA] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | | | | |CudaNdarrayConstant{[-2.]} [@BB] <CudaNdarrayType(float32, (True,))>
+   | | |   | | |     | | | | | |GpuSubtensor{:int64:} [@BC] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | | | |   |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@BD] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | | | |   | |<CudaNdarrayType(float32, vector)> [@BE] <CudaNdarrayType(float32, vector)>
+   | | |   | | |     | | | | |   | |<TensorType(int32, vector)> [@BF] <TensorType(int32, vector)>
+   | | |   | | |     | | | | |   |ScalarFromTensor [@BG] <int64> ''   
+   | | |   | | |     | | | | |     |Elemwise{IntDiv}[(0, 0)] [@BH] <TensorType(int64, scalar)> ''   
+   | | |   | | |     | | | | |       |Prod{acc_dtype=int64} [@BI] <TensorType(int64, scalar)> ''   
+   | | |   | | |     | | | | |       | |MakeVector [@BJ] <TensorType(int64, vector)> ''   
+   | | |   | | |     | | | | |       |   |Shape_i{0} [@BK] <TensorType(int64, scalar)> ''   
+   | | |   | | |     | | | | |       |     |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@BD] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | | | |       |TensorConstant{2} [@BL] <TensorType(int64, scalar)>
+   | | |   | | |     | | | | |GpuElemwise{Mul}[(0, 1)] [@BM] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | | |   |CudaNdarrayConstant{[ 6.28318548]} [@BN] <CudaNdarrayType(float32, (True,))>
+   | | |   | | |     | | | |   |GpuSubtensor{int64::} [@BO] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | | |     |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@BD] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | | |     |ScalarFromTensor [@BG] <int64> ''   
+   | | |   | | |     | | | |GpuElemwise{Composite{(i0 * sin(i1))}}[(0, 0)] [@BP] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | |   |GpuElemwise{Composite{sqrt((i0 * log(i1)))},no_inplace} [@BA] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | |   |GpuElemwise{Mul}[(0, 1)] [@BM] <CudaNdarrayType(float32, vector)> ''   
+   | | |   | | |     | | |<int64> [@BQ] <int64>
+   | | |   | | |     | |<TensorType(int64, vector)> [@BR] <TensorType(int64, vector)>
+   | | |   | | |     |CudaNdarrayConstant{[[ 0.]]} [@BS] <CudaNdarrayType(float32, (True, True))>
+   | | |   | | |Constant{1} [@BT] <int64>
+   | | |   | |<TensorType(int64, (True,))> [@BU] <TensorType(int64, (True,))>
+   | | |   |ScalarFromTensor [@BV] <int64> ''   
+   | | |   | |Elemwise{Composite{Switch(i0, i1, minimum(i2, i3))}}[(0, 3)] [@BW] <TensorType(int64, scalar)> ''   
+   | | |   |   |Elemwise{le,no_inplace} [@BX] <TensorType(int8, scalar)> ''   
+   | | |   |   | |Elemwise{Composite{Switch(LT(i0, i1), Switch(LT((i0 + i2), i1), i1, (i0 + i2)), Switch(LT(i0, i2), i0, i2))}} [@BY] <TensorType(int64, scalar)> ''   
+   | | |   |   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@F] <TensorType(int64, scalar)> ''   
+   | | |   |   | | |TensorConstant{0} [@Y] <TensorType(int8, scalar)>
+   | | |   |   | | |Shape_i{0} [@H] <TensorType(int64, scalar)> ''   
+   | | |   |   | |TensorConstant{0} [@Y] <TensorType(int8, scalar)>
+   | | |   |   |TensorConstant{0} [@Y] <TensorType(int8, scalar)>
+   | | |   |   |TensorConstant{0} [@BZ] <TensorType(int64, scalar)>
+   | | |   |   |Shape_i{0} [@H] <TensorType(int64, scalar)> ''   
+   | | |   |ScalarFromTensor [@CA] <int64> ''   
+   | | |   | |Elemwise{Composite{Switch(i0, i1, minimum(i2, i3))}}[(0, 2)] [@CB] <TensorType(int64, scalar)> ''   
+   | | |   |   |Elemwise{le,no_inplace} [@BX] <TensorType(int8, scalar)> ''   
+   | | |   |   |TensorConstant{0} [@Y] <TensorType(int8, scalar)>
+   | | |   |   |Elemwise{Composite{Switch(LT(i0, i1), Switch(LT((i0 + i2), i1), i1, (i0 + i2)), Switch(LT(i0, i2), i0, i2))}} [@BY] <TensorType(int64, scalar)> ''   
+   | | |   |   |Shape_i{0} [@H] <TensorType(int64, scalar)> ''   
+   | | |   |Constant{1} [@CC] <int8>
+   | | |Elemwise{add,no_inplace} [@CD] <TensorType(int64, vector)> ''   
+   | | | |TensorConstant{(1,) of 10} [@K] <TensorType(int64, (True,))>
+   | | | |Subtensor{int64:int64:int8} [@CE] <TensorType(int64, vector)> ''   
+   | | |   |Elemwise{minimum,no_inplace} [@CF] <TensorType(int64, vector)> ''   
+   | | |   | |Subtensor{::, int64} [@CG] <TensorType(int32, vector)> ''   
+   | | |   | | |Elemwise{Cast{int32}} [@O] <TensorType(int32, matrix)> ''   
+   | | |   | | |Constant{0} [@CH] <int64>
+   | | |   | |<TensorType(int64, (True,))> [@CI] <TensorType(int64, (True,))>
+   | | |   |ScalarFromTensor [@BV] <int64> ''   
+   | | |   |ScalarFromTensor [@CA] <int64> ''   
+   | | |   |Constant{1} [@CC] <int8>
+   | | |GpuSubtensor{:int64:} [@CJ] <CudaNdarrayType(float32, 3D)> ''   
+   | | | |x_copy0[cuda] [@CK] <CudaNdarrayType(float32, 3D)>
+   | | | |ScalarFromTensor [@CL] <int64> ''   
+   | | |   |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@F] <TensorType(int64, scalar)> ''   
+   | | |Subtensor{int64:int64:int8} [@CE] <TensorType(int64, vector)> ''   
+   | | |Subtensor{int64:int64:int8} [@L] <TensorType(int64, vector)> ''   
+   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@F] <TensorType(int64, scalar)> ''   
+   | |w_AttentionModel->input_copy0[cuda] [@CM] <CudaNdarrayType(float32, matrix)>
+   |TensorConstant{1.0} [@CN] <TensorType(float32, scalar)>
+   |<CudaNdarrayType(float32, matrix)> [@I] <CudaNdarrayType(float32, matrix)>
+   |w_AttentionModel->hidden_copy0[cuda] [@CO] <CudaNdarrayType(float32, matrix)>
+   |TensorConstant{1.0} [@CN] <TensorType(float32, scalar)>
+
+Inner graphs of the scan ops:
+
+for{gpu,scan_fn} [@E] <CudaNdarrayType(float32, matrix)> ''   
+ >DeepCopyOp [@CP] <CudaNdarrayType(float32, vector)> ''   
+ > |GpuFlatten{1} [@CQ] <CudaNdarrayType(float32, vector)> ''   
+ >   |GpuSubtensor{int64:int64:, int64:int64:} [@CR] <CudaNdarrayType(float32, matrix)> ''   
+ >     |x[t][cuda] [@CS] <CudaNdarrayType(float32, matrix)>
+ >     |ScalarFromTensor [@CT] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@CU] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@CV] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@CW] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@CX] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@CY] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@CZ] <int64> ''   
+ >       |<TensorType(int64, scalar)> [@DA] <TensorType(int64, scalar)>
+
+HINT: Use another linker then the c linker to have the inputs shapes and strides printed.
+HINT: Re-running with most Theano optimization disabled could give you a back-trace of when this node was created. This can be done with by setting the Theano flag 'optimizer=fast_compile'. If that does not work, Theano optimizations can be disabled with 'optimizer=None'.
+Apply node that caused the error: forall_inplace,gpu,scan_fn&scan_fn&scan_fn}(TensorConstant{8}, GpuFromHost.0, GpuIncSubtensor{InplaceSet;:int64:}.0, GpuAlloc{memset_0=True}.0, GpuIncSubtensor{Set;:int64:}.0, DeepCopyOp.0, DeepCopyOp.0, TensorConstant{8}, TensorConstant{8}, TensorConstant{8}, TensorConstant{8}, w_AttentionModel->location, b_AttentionModel->location, w_AttentionModel->input, w_AttentionModel->hidden, b_AttentionModel->hidden, GpuFromHost.0, GpuDimShuffle{x,0}.0, GpuDimShuffle{x,0}.0, MakeVector.0, Shape_i{0}.0, Elemwise{Add}[(0, 1)].0, Elemwise{Add}[(0, 1)].0, ScalarFromTensor.0, Elemwise{Cast{int32}}.0)
+Inputs types: [TensorType(int64, scalar), CudaNdarrayType(float32, 3D), CudaNdarrayType(float32, matrix), CudaNdarrayType(float32, 3D), CudaNdarrayType(float32, matrix), CudaNdarrayType(float32, 3D), CudaNdarrayType(float32, matrix), TensorType(int64, scalar), TensorType(int64, scalar), TensorType(int64, scalar), TensorType(int64, scalar), CudaNdarrayType(float32, matrix), CudaNdarrayType(float32, vector), CudaNdarrayType(float32, matrix), CudaNdarrayType(float32, matrix), CudaNdarrayType(float32, vector), CudaNdarrayType(float32, 3D), CudaNdarrayType(float32, row), CudaNdarrayType(float32, row), TensorType(int64, vector), TensorType(int64, scalar), TensorType(int64, (True,)), TensorType(int64, (True,)), Scalar(int64), TensorType(int32, vector)]
+Inputs shapes: [(), (1, 5000, 500), (1, 92160), (9, 5000, 500), (9, 92160), (1, 5000, 500), (1, 92160), (), (), (), (), (500, 2), (2,), (100, 500), (500, 500), (500,), (5000, 28, 28), (1, 2), (1, 500), (2,), (), (1,), (1,), (), (1,)]
+Inputs strides: [(), (0, 500, 1), (0, 1), (2500000, 500, 1), (92160, 1), (0, 500, 1), (0, 1), (), (), (), (), (2, 1), (1,), (500, 1), (500, 1), (1,), (784, 28, 1), (0, 1), (0, 1), (8,), (), (8,), (8,), (), (4,)]
+Inputs values: [array(8), 'not shown', 'not shown', 'not shown', 'not shown', 'not shown', 'not shown', array(8), array(8), array(8), array(8), 'not shown', <CudaNdarray object at 0x7f38ebdf0470>, 'not shown', 'not shown', 'not shown', 'not shown', <CudaNdarray object at 0x7f38ad625f70>, 'not shown', array([5000,    2]), array(5000), array([18]), array([18]), 10000, array([10000], dtype=int32)]
+
+Debugprint of the apply node: 
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.0 [@A] <CudaNdarrayType(float32, 3D)> ''   
+ |TensorConstant{8} [@B] <TensorType(int64, scalar)>
+ |GpuFromHost [@C] <CudaNdarrayType(float32, 3D)> ''   
+ | |Rebroadcast{0} [@D] <TensorType(float32, 3D)> ''   
+ |   |Alloc [@E] <TensorType(float32, (True, False, False))> ''   
+ |     |TensorConstant{0.0} [@F] <TensorType(float32, scalar)>
+ |     |TensorConstant{1} [@G] <TensorType(int64, scalar)>
+ |     |Shape_i{0} [@H] <TensorType(int64, scalar)> ''   
+ |     | |x01201234 [@I] <TensorType(float32, 3D)>
+ |     |TensorConstant{500} [@J] <TensorType(int64, scalar)>
+ |GpuIncSubtensor{InplaceSet;:int64:} [@K] <CudaNdarrayType(float32, matrix)> ''   
+ | |Rebroadcast{0} [@L] <CudaNdarrayType(float32, matrix)> ''   
+ | | |GpuAlloc{memset_0=True} [@M] <CudaNdarrayType(float32, row)> ''   
+ | |   |CudaNdarrayConstant{0.0} [@N] <CudaNdarrayType(float32, scalar)>
+ | |   |TensorConstant{1} [@G] <TensorType(int64, scalar)>
+ | |   |Shape_i{0} [@O] <TensorType(int64, scalar)> ''   
+ | |     |<CudaNdarrayType(float32, vector)> [@P] <CudaNdarrayType(float32, vector)>
+ | |Rebroadcast{0} [@Q] <CudaNdarrayType(float32, matrix)> ''   
+ | | |GpuDimShuffle{x,0} [@R] <CudaNdarrayType(float32, row)> ''   
+ | |   |<CudaNdarrayType(float32, vector)> [@P] <CudaNdarrayType(float32, vector)>
+ | |Constant{1} [@S] <int64>
+ |GpuAlloc{memset_0=True} [@T] <CudaNdarrayType(float32, 3D)> ''   
+ | |CudaNdarrayConstant{0.0} [@N] <CudaNdarrayType(float32, scalar)>
+ | |TensorConstant{9} [@U] <TensorType(int64, scalar)>
+ | |Shape_i{0} [@H] <TensorType(int64, scalar)> ''   
+ | |TensorConstant{500} [@J] <TensorType(int64, scalar)>
+ |GpuIncSubtensor{Set;:int64:} [@V] <CudaNdarrayType(float32, matrix)> ''   
+ | |GpuAlloc{memset_0=True} [@W] <CudaNdarrayType(float32, matrix)> ''   
+ | | |CudaNdarrayConstant{0.0} [@N] <CudaNdarrayType(float32, scalar)>
+ | | |TensorConstant{9} [@U] <TensorType(int64, scalar)>
+ | | |Shape_i{0} [@O] <TensorType(int64, scalar)> ''   
+ | |Rebroadcast{0} [@Q] <CudaNdarrayType(float32, matrix)> ''   
+ | |Constant{1} [@S] <int64>
+ |DeepCopyOp [@X] <CudaNdarrayType(float32, 3D)> ''   
+ | |GpuFromHost [@C] <CudaNdarrayType(float32, 3D)> ''   
+ |DeepCopyOp [@Y] <CudaNdarrayType(float32, matrix)> ''   
+ | |GpuIncSubtensor{InplaceSet;:int64:} [@K] <CudaNdarrayType(float32, matrix)> ''   
+ |TensorConstant{8} [@B] <TensorType(int64, scalar)>
+ |TensorConstant{8} [@B] <TensorType(int64, scalar)>
+ |TensorConstant{8} [@B] <TensorType(int64, scalar)>
+ |TensorConstant{8} [@B] <TensorType(int64, scalar)>
+ |w_AttentionModel->location [@Z] <CudaNdarrayType(float32, matrix)>
+ |b_AttentionModel->location [@BA] <CudaNdarrayType(float32, vector)>
+ |w_AttentionModel->input [@BB] <CudaNdarrayType(float32, matrix)>
+ |w_AttentionModel->hidden [@BC] <CudaNdarrayType(float32, matrix)>
+ |b_AttentionModel->hidden [@BD] <CudaNdarrayType(float32, vector)>
+ |GpuFromHost [@BE] <CudaNdarrayType(float32, 3D)> ''   
+ | |x01201234 [@I] <TensorType(float32, 3D)>
+ |GpuDimShuffle{x,0} [@BF] <CudaNdarrayType(float32, row)> ''   
+ | |b_AttentionModel->location [@BA] <CudaNdarrayType(float32, vector)>
+ |GpuDimShuffle{x,0} [@BG] <CudaNdarrayType(float32, row)> ''   
+ | |b_AttentionModel->hidden [@BD] <CudaNdarrayType(float32, vector)>
+ |MakeVector [@BH] <TensorType(int64, vector)> ''   
+ | |Shape_i{0} [@H] <TensorType(int64, scalar)> ''   
+ | |TensorConstant{2} [@BI] <TensorType(int64, scalar)>
+ |Shape_i{0} [@H] <TensorType(int64, scalar)> ''   
+ |Elemwise{Add}[(0, 1)] [@BJ] <TensorType(int64, (True,))> ''   
+ | |TensorConstant{(1,) of -10} [@BK] <TensorType(int64, (True,))>
+ | |InplaceDimShuffle{x} [@BL] <TensorType(int64, (True,))> ''   
+ |   |Shape_i{2} [@BM] <TensorType(int64, scalar)> ''   
+ |     |x01201234 [@I] <TensorType(float32, 3D)>
+ |Elemwise{Add}[(0, 1)] [@BN] <TensorType(int64, (True,))> ''   
+ | |TensorConstant{(1,) of -10} [@BK] <TensorType(int64, (True,))>
+ | |InplaceDimShuffle{x} [@BO] <TensorType(int64, (True,))> ''   
+ |   |Shape_i{1} [@BP] <TensorType(int64, scalar)> ''   
+ |     |x01201234 [@I] <TensorType(float32, 3D)>
+ |ScalarFromTensor [@BQ] <int64> ''   
+ | |Prod{acc_dtype=int64} [@BR] <TensorType(int64, scalar)> ''   
+ |   |MakeVector [@BH] <TensorType(int64, vector)> ''   
+ |Elemwise{Cast{int32}} [@BS] <TensorType(int32, vector)> ''   
+   |MakeVector [@BT] <TensorType(int64, vector)> ''   
+     |Elemwise{Composite{(i0 + (i0 % i1))}}[(0, 0)] [@BU] <TensorType(int64, scalar)> ''   
+       |Prod{acc_dtype=int64} [@BR] <TensorType(int64, scalar)> ''   
+       |TensorConstant{2} [@BI] <TensorType(int64, scalar)>
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.1 [@A] <CudaNdarrayType(float32, matrix)> ''   
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.2 [@A] <CudaNdarrayType(float32, 3D)> ''   
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.3 [@A] <CudaNdarrayType(float32, matrix)> ''   
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.4 [@A] <CudaNdarrayType(float32, 3D)> ''   
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.5 [@A] <CudaNdarrayType(float32, matrix)> ''   
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.6 [@A] <TensorType(int64, 3D)> ''   
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.7 [@A] <TensorType(int64, 3D)> ''   
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.8 [@A] <CudaNdarrayType(float32, 3D)> ''   
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.9 [@A] <TensorType(int64, 3D)> ''   
+
+Inner graphs of the scan ops:
+
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.0 [@A] <CudaNdarrayType(float32, 3D)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@BV] <CudaNdarrayType(float32, matrix)> ''   
+ > |GpuDimShuffle{x,0} [@BW] <CudaNdarrayType(float32, row)> ''   
+ > | |b_AttentionModel->hidden_copy0[cuda] [@BX] <CudaNdarrayType(float32, vector)>
+ > |GpuGemm{inplace} [@BY] <CudaNdarrayType(float32, matrix)> ''   
+ >   |GpuDot22 [@BZ] <CudaNdarrayType(float32, matrix)> ''   
+ >   | |for{gpu,scan_fn} [@CA] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@CB] <TensorType(int64, scalar)> ''   
+ >   | | | |Shape_i{0} [@CC] <TensorType(int64, scalar)> ''   
+ >   | | | | |x_copy0[cuda] [@CD] <CudaNdarrayType(float32, 3D)>
+ >   | | | |Shape_i{0} [@CE] <TensorType(int64, scalar)> ''   
+ >   | | |   |<CudaNdarrayType(float32, matrix)> [@CF] <CudaNdarrayType(float32, matrix)>
+ >   | | |Elemwise{add,no_inplace} [@CG] <TensorType(int64, vector)> ''   
+ >   | | | |TensorConstant{(1,) of 10} [@CH] <TensorType(int64, (True,))>
+ >   | | | |Subtensor{int64:int64:int8} [@CI] <TensorType(int64, vector)> ''   
+ >   | | |   |Elemwise{minimum,no_inplace} [@CJ] <TensorType(int64, vector)> ''   
+ >   | | |   | |Subtensor{::, int64} [@CK] <TensorType(int32, vector)> ''   
+ >   | | |   | | |Elemwise{Cast{int32}} [@CL] <TensorType(int32, matrix)> ''   
+ >   | | |   | | | |HostFromGpu [@CM] <TensorType(float32, matrix)> ''   
+ >   | | |   | | |   |GpuElemwise{Composite{maximum((tanh((i0 + i1)) + i2), i3)}}[(0, 0)] [@CN] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |   | | |     |GpuDot22 [@CO] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |   | | |     | |<CudaNdarrayType(float32, matrix)> [@CF] <CudaNdarrayType(float32, matrix)>
+ >   | | |   | | |     | |w_AttentionModel->location_copy0[cuda] [@CP] <CudaNdarrayType(float32, matrix)>
+ >   | | |   | | |     |GpuDimShuffle{x,0} [@CQ] <CudaNdarrayType(float32, row)> ''   
+ >   | | |   | | |     | |b_AttentionModel->location_copy0[cuda] [@CR] <CudaNdarrayType(float32, vector)>
+ >   | | |   | | |     |GpuReshape{2} [@CS] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |   | | |     | |GpuSubtensor{:int64:} [@CT] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |GpuJoin [@CU] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   | | |     | | | |GpuElemwise{Composite{(i0 * cos(i1))},no_inplace} [@CW] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |GpuElemwise{Composite{sqrt((i0 * log(i1)))},no_inplace} [@CX] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | | |CudaNdarrayConstant{[-2.]} [@CY] <CudaNdarrayType(float32, (True,))>
+ >   | | |   | | |     | | | | | |GpuSubtensor{:int64:} [@CZ] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |   |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |   | |<CudaNdarrayType(float32, vector)> [@DB] <CudaNdarrayType(float32, vector)>
+ >   | | |   | | |     | | | | |   | |Elemwise{Cast{int32}} [@DC] <TensorType(int32, vector)> ''   
+ >   | | |   | | |     | | | | |   |   |MakeVector [@DD] <TensorType(int64, vector)> ''   
+ >   | | |   | | |     | | | | |   |     |Elemwise{Composite{(i0 + (i0 % i1))}}[(0, 0)] [@DE] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |   |       |Prod{acc_dtype=int64} [@DF] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |   |       | |MakeVector [@DG] <TensorType(int64, vector)> ''   
+ >   | | |   | | |     | | | | |   |       |   |Shape_i{0} [@CC] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |   |       |   |TensorConstant{2} [@DH] <TensorType(int64, scalar)>
+ >   | | |   | | |     | | | | |   |       |TensorConstant{2} [@DH] <TensorType(int64, scalar)>
+ >   | | |   | | |     | | | | |   |ScalarFromTensor [@DI] <int64> ''   
+ >   | | |   | | |     | | | | |     |Elemwise{IntDiv}[(0, 0)] [@DJ] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |       |Prod{acc_dtype=int64} [@DK] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |       | |MakeVector [@DL] <TensorType(int64, vector)> ''   
+ >   | | |   | | |     | | | | |       |   |Shape_i{0} [@DM] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |       |     |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |       |TensorConstant{2} [@DH] <TensorType(int64, scalar)>
+ >   | | |   | | |     | | | | |GpuElemwise{Mul}[(0, 1)] [@DN] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |   |CudaNdarrayConstant{[ 6.28318548]} [@DO] <CudaNdarrayType(float32, (True,))>
+ >   | | |   | | |     | | | |   |GpuSubtensor{int64::} [@DP] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |     |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |     |ScalarFromTensor [@DI] <int64> ''   
+ >   | | |   | | |     | | | |GpuElemwise{Composite{(i0 * sin(i1))}}[(0, 0)] [@DQ] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |   |GpuElemwise{Composite{sqrt((i0 * log(i1)))},no_inplace} [@CX] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |   |GpuElemwise{Mul}[(0, 1)] [@DN] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |ScalarFromTensor [@DR] <int64> ''   
+ >   | | |   | | |     | |   |Prod{acc_dtype=int64} [@DF] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | |MakeVector [@DG] <TensorType(int64, vector)> ''   
+ >   | | |   | | |     |CudaNdarrayConstant{[[ 0.]]} [@DS] <CudaNdarrayType(float32, (True, True))>
+ >   | | |   | | |Constant{1} [@DT] <int64>
+ >   | | |   | |Elemwise{Add}[(0, 1)] [@DU] <TensorType(int64, (True,))> ''   
+ >   | | |   |   |TensorConstant{(1,) of -10} [@DV] <TensorType(int64, (True,))>
+ >   | | |   |   |InplaceDimShuffle{x} [@DW] <TensorType(int64, (True,))> ''   
+ >   | | |   |     |Shape_i{2} [@DX] <TensorType(int64, scalar)> ''   
+ >   | | |   |       |x_copy0[cuda] [@CD] <CudaNdarrayType(float32, 3D)>
+ >   | | |   |ScalarFromTensor [@DY] <int64> ''   
+ >   | | |   | |Elemwise{Composite{Switch(i0, i1, minimum(i2, i3))}}[(0, 3)] [@DZ] <TensorType(int64, scalar)> ''   
+ >   | | |   |   |Elemwise{le,no_inplace} [@EA] <TensorType(int8, scalar)> ''   
+ >   | | |   |   | |Elemwise{Composite{Switch(i0, Switch(LT((i1 + i2), i3), i3, (i1 + i2)), Switch(LT(i1, i2), i1, i2))}} [@EB] <TensorType(int64, scalar)> ''   
+ >   | | |   |   | | |Elemwise{lt,no_inplace} [@EC] <TensorType(int8, scalar)> ''   
+ >   | | |   |   | | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@CB] <TensorType(int64, scalar)> ''   
+ >   | | |   |   | | | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@CB] <TensorType(int64, scalar)> ''   
+ >   | | |   |   | | |Shape_i{0} [@CE] <TensorType(int64, scalar)> ''   
+ >   | | |   |   | | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   |TensorConstant{0} [@ED] <TensorType(int64, scalar)>
+ >   | | |   |   |Shape_i{0} [@CE] <TensorType(int64, scalar)> ''   
+ >   | | |   |ScalarFromTensor [@EE] <int64> ''   
+ >   | | |   | |Elemwise{Composite{Switch(i0, i1, minimum(i2, i3))}}[(0, 2)] [@EF] <TensorType(int64, scalar)> ''   
+ >   | | |   |   |Elemwise{le,no_inplace} [@EA] <TensorType(int8, scalar)> ''   
+ >   | | |   |   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   |Elemwise{Composite{Switch(i0, Switch(LT((i1 + i2), i3), i3, (i1 + i2)), Switch(LT(i1, i2), i1, i2))}} [@EB] <TensorType(int64, scalar)> ''   
+ >   | | |   |   |Shape_i{0} [@CE] <TensorType(int64, scalar)> ''   
+ >   | | |   |Constant{1} [@EG] <int8>
+ >   | | |Elemwise{add,no_inplace} [@EH] <TensorType(int64, vector)> ''   
+ >   | | | |TensorConstant{(1,) of 10} [@CH] <TensorType(int64, (True,))>
+ >   | | | |Subtensor{int64:int64:int8} [@EI] <TensorType(int64, vector)> ''   
+ >   | | |   |Elemwise{minimum,no_inplace} [@EJ] <TensorType(int64, vector)> ''   
+ >   | | |   | |Subtensor{::, int64} [@EK] <TensorType(int32, vector)> ''   
+ >   | | |   | | |Elemwise{Cast{int32}} [@CL] <TensorType(int32, matrix)> ''   
+ >   | | |   | | |Constant{0} [@EL] <int64>
+ >   | | |   | |Elemwise{Add}[(0, 1)] [@EM] <TensorType(int64, (True,))> ''   
+ >   | | |   |   |TensorConstant{(1,) of -10} [@DV] <TensorType(int64, (True,))>
+ >   | | |   |   |InplaceDimShuffle{x} [@EN] <TensorType(int64, (True,))> ''   
+ >   | | |   |     |Shape_i{1} [@EO] <TensorType(int64, scalar)> ''   
+ >   | | |   |       |x_copy0[cuda] [@CD] <CudaNdarrayType(float32, 3D)>
+ >   | | |   |ScalarFromTensor [@DY] <int64> ''   
+ >   | | |   |ScalarFromTensor [@EE] <int64> ''   
+ >   | | |   |Constant{1} [@EG] <int8>
+ >   | | |GpuSubtensor{int64:int64:int8} [@EP] <CudaNdarrayType(float32, 3D)> ''   
+ >   | | | |x_copy0[cuda] [@CD] <CudaNdarrayType(float32, 3D)>
+ >   | | | |ScalarFromTensor [@EQ] <int64> ''   
+ >   | | | | |Elemwise{Composite{Switch(i0, i1, minimum(i2, i3))}}[(0, 3)] [@ER] <TensorType(int64, scalar)> ''   
+ >   | | | |   |Elemwise{le,no_inplace} [@ES] <TensorType(int8, scalar)> ''   
+ >   | | | |   | |Elemwise{Composite{Switch(i0, Switch(LT((i1 + i2), i3), i3, (i1 + i2)), Switch(LT(i1, i2), i1, i2))}} [@ET] <TensorType(int64, scalar)> ''   
+ >   | | | |   | | |Elemwise{lt,no_inplace} [@EC] <TensorType(int8, scalar)> ''   
+ >   | | | |   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@CB] <TensorType(int64, scalar)> ''   
+ >   | | | |   | | |Shape_i{0} [@CC] <TensorType(int64, scalar)> ''   
+ >   | | | |   | | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | | |   | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | | |   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | | |   |TensorConstant{0} [@ED] <TensorType(int64, scalar)>
+ >   | | | |   |Shape_i{0} [@CC] <TensorType(int64, scalar)> ''   
+ >   | | | |ScalarFromTensor [@EU] <int64> ''   
+ >   | | | | |Elemwise{Composite{Switch(i0, i1, minimum(i2, i3))}}[(0, 2)] [@EV] <TensorType(int64, scalar)> ''   
+ >   | | | |   |Elemwise{le,no_inplace} [@ES] <TensorType(int8, scalar)> ''   
+ >   | | | |   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | | |   |Elemwise{Composite{Switch(i0, Switch(LT((i1 + i2), i3), i3, (i1 + i2)), Switch(LT(i1, i2), i1, i2))}} [@ET] <TensorType(int64, scalar)> ''   
+ >   | | | |   |Shape_i{0} [@CC] <TensorType(int64, scalar)> ''   
+ >   | | | |Constant{1} [@EG] <int8>
+ >   | | |Subtensor{int64:int64:int8} [@EI] <TensorType(int64, vector)> ''   
+ >   | | |Subtensor{int64:int64:int8} [@CI] <TensorType(int64, vector)> ''   
+ >   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@CB] <TensorType(int64, scalar)> ''   
+ >   | |w_AttentionModel->input_copy0[cuda] [@EW] <CudaNdarrayType(float32, matrix)>
+ >   |TensorConstant{1.0} [@EX] <TensorType(float32, scalar)>
+ >   |<CudaNdarrayType(float32, matrix)> [@CF] <CudaNdarrayType(float32, matrix)>
+ >   |w_AttentionModel->hidden_copy0[cuda] [@EY] <CudaNdarrayType(float32, matrix)>
+ >   |TensorConstant{1.0} [@EX] <TensorType(float32, scalar)>
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@EZ] <CudaNdarrayType(float32, matrix)> ''   
+ > |<CudaNdarrayType(float32, row)> [@FA] <CudaNdarrayType(float32, row)>
+ > |GpuGemm{inplace} [@FB] <CudaNdarrayType(float32, matrix)> ''   
+ >   |GpuDot22 [@FC] <CudaNdarrayType(float32, matrix)> ''   
+ >   | |for{gpu,scan_fn} [@FD] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@FE] <TensorType(int64, scalar)> ''   
+ >   | | | |<TensorType(int64, scalar)> [@FF] <TensorType(int64, scalar)>
+ >   | | | |Shape_i{0} [@FG] <TensorType(int64, scalar)> ''   
+ >   | | |   |<CudaNdarrayType(float32, matrix)> [@FH] <CudaNdarrayType(float32, matrix)>
+ >   | | |Elemwise{add,no_inplace} [@FI] <TensorType(int64, vector)> ''   
+ >   | | | |TensorConstant{(1,) of 10} [@CH] <TensorType(int64, (True,))>
+ >   | | | |Subtensor{int64:int64:int8} [@FJ] <TensorType(int64, vector)> ''   
+ >   | | |   |Elemwise{minimum,no_inplace} [@FK] <TensorType(int64, vector)> ''   
+ >   | | |   | |Subtensor{::, int64} [@FL] <TensorType(int32, vector)> ''   
+ >   | | |   | | |Elemwise{Cast{int32}} [@FM] <TensorType(int32, matrix)> ''   
+ >   | | |   | | | |HostFromGpu [@FN] <TensorType(float32, matrix)> ''   
+ >   | | |   | | |   |GpuElemwise{Composite{maximum((i0 + i1), i2)}}[(0, 1)] [@FO] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |   | | |     |GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |   | | |     | |GpuDot22 [@FQ] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |   | | |     | | |<CudaNdarrayType(float32, matrix)> [@FH] <CudaNdarrayType(float32, matrix)>
+ >   | | |   | | |     | | |w_AttentionModel->location_copy0[cuda] [@CP] <CudaNdarrayType(float32, matrix)>
+ >   | | |   | | |     | |<CudaNdarrayType(float32, row)> [@FR] <CudaNdarrayType(float32, row)>
+ >   | | |   | | |     |GpuReshape{2} [@FS] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |   | | |     | |GpuSubtensor{:int64:} [@FT] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |GpuJoin [@FU] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   | | |     | | | |GpuElemwise{Composite{(i0 * cos(i1))},no_inplace} [@FV] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |GpuElemwise{Composite{sqrt((i0 * log(i1)))},no_inplace} [@FW] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | | |CudaNdarrayConstant{[-2.]} [@CY] <CudaNdarrayType(float32, (True,))>
+ >   | | |   | | |     | | | | | |GpuSubtensor{:int64:} [@FX] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |   |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |   | |<CudaNdarrayType(float32, vector)> [@FZ] <CudaNdarrayType(float32, vector)>
+ >   | | |   | | |     | | | | |   | |<TensorType(int32, vector)> [@GA] <TensorType(int32, vector)>
+ >   | | |   | | |     | | | | |   |ScalarFromTensor [@GB] <int64> ''   
+ >   | | |   | | |     | | | | |     |Elemwise{IntDiv}[(0, 0)] [@GC] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |       |Prod{acc_dtype=int64} [@GD] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |       | |MakeVector [@GE] <TensorType(int64, vector)> ''   
+ >   | | |   | | |     | | | | |       |   |Shape_i{0} [@GF] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |       |     |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |       |TensorConstant{2} [@DH] <TensorType(int64, scalar)>
+ >   | | |   | | |     | | | | |GpuElemwise{Mul}[(0, 1)] [@GG] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |   |CudaNdarrayConstant{[ 6.28318548]} [@DO] <CudaNdarrayType(float32, (True,))>
+ >   | | |   | | |     | | | |   |GpuSubtensor{int64::} [@GH] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |     |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |     |ScalarFromTensor [@GB] <int64> ''   
+ >   | | |   | | |     | | | |GpuElemwise{Composite{(i0 * sin(i1))}}[(0, 0)] [@GI] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |   |GpuElemwise{Composite{sqrt((i0 * log(i1)))},no_inplace} [@FW] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |   |GpuElemwise{Mul}[(0, 1)] [@GG] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |<int64> [@GJ] <int64>
+ >   | | |   | | |     | |<TensorType(int64, vector)> [@GK] <TensorType(int64, vector)>
+ >   | | |   | | |     |CudaNdarrayConstant{[[ 0.]]} [@DS] <CudaNdarrayType(float32, (True, True))>
+ >   | | |   | | |Constant{1} [@DT] <int64>
+ >   | | |   | |<TensorType(int64, (True,))> [@GL] <TensorType(int64, (True,))>
+ >   | | |   |ScalarFromTensor [@GM] <int64> ''   
+ >   | | |   | |Elemwise{Composite{Switch(i0, i1, minimum(i2, i3))}}[(0, 3)] [@GN] <TensorType(int64, scalar)> ''   
+ >   | | |   |   |Elemwise{le,no_inplace} [@GO] <TensorType(int8, scalar)> ''   
+ >   | | |   |   | |Elemwise{Composite{Switch(LT(i0, i1), Switch(LT((i0 + i2), i1), i1, (i0 + i2)), Switch(LT(i0, i2), i0, i2))}} [@GP] <TensorType(int64, scalar)> ''   
+ >   | | |   |   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@FE] <TensorType(int64, scalar)> ''   
+ >   | | |   |   | | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   | | |Shape_i{0} [@FG] <TensorType(int64, scalar)> ''   
+ >   | | |   |   | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   |TensorConstant{0} [@ED] <TensorType(int64, scalar)>
+ >   | | |   |   |Shape_i{0} [@FG] <TensorType(int64, scalar)> ''   
+ >   | | |   |ScalarFromTensor [@GQ] <int64> ''   
+ >   | | |   | |Elemwise{Composite{Switch(i0, i1, minimum(i2, i3))}}[(0, 2)] [@GR] <TensorType(int64, scalar)> ''   
+ >   | | |   |   |Elemwise{le,no_inplace} [@GO] <TensorType(int8, scalar)> ''   
+ >   | | |   |   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   |Elemwise{Composite{Switch(LT(i0, i1), Switch(LT((i0 + i2), i1), i1, (i0 + i2)), Switch(LT(i0, i2), i0, i2))}} [@GP] <TensorType(int64, scalar)> ''   
+ >   | | |   |   |Shape_i{0} [@FG] <TensorType(int64, scalar)> ''   
+ >   | | |   |Constant{1} [@EG] <int8>
+ >   | | |Elemwise{add,no_inplace} [@GS] <TensorType(int64, vector)> ''   
+ >   | | | |TensorConstant{(1,) of 10} [@CH] <TensorType(int64, (True,))>
+ >   | | | |Subtensor{int64:int64:int8} [@GT] <TensorType(int64, vector)> ''   
+ >   | | |   |Elemwise{minimum,no_inplace} [@GU] <TensorType(int64, vector)> ''   
+ >   | | |   | |Subtensor{::, int64} [@GV] <TensorType(int32, vector)> ''   
+ >   | | |   | | |Elemwise{Cast{int32}} [@FM] <TensorType(int32, matrix)> ''   
+ >   | | |   | | |Constant{0} [@EL] <int64>
+ >   | | |   | |<TensorType(int64, (True,))> [@GW] <TensorType(int64, (True,))>
+ >   | | |   |ScalarFromTensor [@GM] <int64> ''   
+ >   | | |   |ScalarFromTensor [@GQ] <int64> ''   
+ >   | | |   |Constant{1} [@EG] <int8>
+ >   | | |GpuSubtensor{:int64:} [@GX] <CudaNdarrayType(float32, 3D)> ''   
+ >   | | | |x_copy0[cuda] [@CD] <CudaNdarrayType(float32, 3D)>
+ >   | | | |ScalarFromTensor [@GY] <int64> ''   
+ >   | | |   |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@FE] <TensorType(int64, scalar)> ''   
+ >   | | |Subtensor{int64:int64:int8} [@GT] <TensorType(int64, vector)> ''   
+ >   | | |Subtensor{int64:int64:int8} [@FJ] <TensorType(int64, vector)> ''   
+ >   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@FE] <TensorType(int64, scalar)> ''   
+ >   | |w_AttentionModel->input_copy0[cuda] [@EW] <CudaNdarrayType(float32, matrix)>
+ >   |TensorConstant{1.0} [@EX] <TensorType(float32, scalar)>
+ >   |<CudaNdarrayType(float32, matrix)> [@FH] <CudaNdarrayType(float32, matrix)>
+ >   |w_AttentionModel->hidden_copy0[cuda] [@EY] <CudaNdarrayType(float32, matrix)>
+ >   |TensorConstant{1.0} [@EX] <TensorType(float32, scalar)>
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@GZ] <CudaNdarrayType(float32, matrix)> ''   
+ > |<CudaNdarrayType(float32, row)> [@FA] <CudaNdarrayType(float32, row)>
+ > |GpuGemm{inplace} [@HA] <CudaNdarrayType(float32, matrix)> ''   
+ >   |GpuDot22 [@HB] <CudaNdarrayType(float32, matrix)> ''   
+ >   | |for{gpu,scan_fn} [@HC] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@HD] <TensorType(int64, scalar)> ''   
+ >   | | | |<TensorType(int64, scalar)> [@FF] <TensorType(int64, scalar)>
+ >   | | | |Shape_i{0} [@HE] <TensorType(int64, scalar)> ''   
+ >   | | |   |<CudaNdarrayType(float32, matrix)> [@HF] <CudaNdarrayType(float32, matrix)>
+ >   | | |Elemwise{add,no_inplace} [@HG] <TensorType(int64, vector)> ''   
+ >   | | | |TensorConstant{(1,) of 10} [@CH] <TensorType(int64, (True,))>
+ >   | | | |Subtensor{int64:int64:int8} [@HH] <TensorType(int64, vector)> ''   
+ >   | | |   |Elemwise{minimum,no_inplace} [@HI] <TensorType(int64, vector)> ''   
+ >   | | |   | |Subtensor{::, int64} [@HJ] <TensorType(int32, vector)> ''   
+ >   | | |   | | |Elemwise{Cast{int32}} [@HK] <TensorType(int32, matrix)> ''   
+ >   | | |   | | | |HostFromGpu [@HL] <TensorType(float32, matrix)> ''   
+ >   | | |   | | |   |GpuElemwise{Composite{maximum((tanh((i0 + i1)) + i2), i3)}}[(0, 0)] [@HM] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |   | | |     |GpuDot22 [@HN] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |   | | |     | |<CudaNdarrayType(float32, matrix)> [@HF] <CudaNdarrayType(float32, matrix)>
+ >   | | |   | | |     | |w_AttentionModel->location_copy0[cuda] [@CP] <CudaNdarrayType(float32, matrix)>
+ >   | | |   | | |     |<CudaNdarrayType(float32, row)> [@FR] <CudaNdarrayType(float32, row)>
+ >   | | |   | | |     |GpuReshape{2} [@HO] <CudaNdarrayType(float32, matrix)> ''   
+ >   | | |   | | |     | |GpuSubtensor{:int64:} [@HP] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |GpuJoin [@HQ] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   | | |     | | | |GpuElemwise{Composite{(i0 * cos(i1))},no_inplace} [@HR] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |GpuElemwise{Composite{sqrt((i0 * log(i1)))},no_inplace} [@HS] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | | |CudaNdarrayConstant{[-2.]} [@CY] <CudaNdarrayType(float32, (True,))>
+ >   | | |   | | |     | | | | | |GpuSubtensor{:int64:} [@HT] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |   |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |   | |<CudaNdarrayType(float32, vector)> [@HV] <CudaNdarrayType(float32, vector)>
+ >   | | |   | | |     | | | | |   | |<TensorType(int32, vector)> [@GA] <TensorType(int32, vector)>
+ >   | | |   | | |     | | | | |   |ScalarFromTensor [@HW] <int64> ''   
+ >   | | |   | | |     | | | | |     |Elemwise{IntDiv}[(0, 0)] [@HX] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |       |Prod{acc_dtype=int64} [@HY] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |       | |MakeVector [@HZ] <TensorType(int64, vector)> ''   
+ >   | | |   | | |     | | | | |       |   |Shape_i{0} [@IA] <TensorType(int64, scalar)> ''   
+ >   | | |   | | |     | | | | |       |     |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | | |       |TensorConstant{2} [@DH] <TensorType(int64, scalar)>
+ >   | | |   | | |     | | | | |GpuElemwise{Mul}[(0, 1)] [@IB] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |   |CudaNdarrayConstant{[ 6.28318548]} [@DO] <CudaNdarrayType(float32, (True,))>
+ >   | | |   | | |     | | | |   |GpuSubtensor{int64::} [@IC] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |     |GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.1 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | | |     |ScalarFromTensor [@HW] <int64> ''   
+ >   | | |   | | |     | | | |GpuElemwise{Composite{(i0 * sin(i1))}}[(0, 0)] [@ID] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |   |GpuElemwise{Composite{sqrt((i0 * log(i1)))},no_inplace} [@HS] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |   |GpuElemwise{Mul}[(0, 1)] [@IB] <CudaNdarrayType(float32, vector)> ''   
+ >   | | |   | | |     | | |<int64> [@GJ] <int64>
+ >   | | |   | | |     | |<TensorType(int64, vector)> [@GK] <TensorType(int64, vector)>
+ >   | | |   | | |     |CudaNdarrayConstant{[[ 0.]]} [@DS] <CudaNdarrayType(float32, (True, True))>
+ >   | | |   | | |Constant{1} [@DT] <int64>
+ >   | | |   | |<TensorType(int64, (True,))> [@GL] <TensorType(int64, (True,))>
+ >   | | |   |ScalarFromTensor [@IE] <int64> ''   
+ >   | | |   | |Elemwise{Composite{Switch(i0, i1, minimum(i2, i3))}}[(0, 3)] [@IF] <TensorType(int64, scalar)> ''   
+ >   | | |   |   |Elemwise{le,no_inplace} [@IG] <TensorType(int8, scalar)> ''   
+ >   | | |   |   | |Elemwise{Composite{Switch(LT(i0, i1), Switch(LT((i0 + i2), i1), i1, (i0 + i2)), Switch(LT(i0, i2), i0, i2))}} [@IH] <TensorType(int64, scalar)> ''   
+ >   | | |   |   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@HD] <TensorType(int64, scalar)> ''   
+ >   | | |   |   | | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   | | |Shape_i{0} [@HE] <TensorType(int64, scalar)> ''   
+ >   | | |   |   | |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   |TensorConstant{0} [@ED] <TensorType(int64, scalar)>
+ >   | | |   |   |Shape_i{0} [@HE] <TensorType(int64, scalar)> ''   
+ >   | | |   |ScalarFromTensor [@II] <int64> ''   
+ >   | | |   | |Elemwise{Composite{Switch(i0, i1, minimum(i2, i3))}}[(0, 2)] [@IJ] <TensorType(int64, scalar)> ''   
+ >   | | |   |   |Elemwise{le,no_inplace} [@IG] <TensorType(int8, scalar)> ''   
+ >   | | |   |   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   | | |   |   |Elemwise{Composite{Switch(LT(i0, i1), Switch(LT((i0 + i2), i1), i1, (i0 + i2)), Switch(LT(i0, i2), i0, i2))}} [@IH] <TensorType(int64, scalar)> ''   
+ >   | | |   |   |Shape_i{0} [@HE] <TensorType(int64, scalar)> ''   
+ >   | | |   |Constant{1} [@EG] <int8>
+ >   | | |Elemwise{add,no_inplace} [@IK] <TensorType(int64, vector)> ''   
+ >   | | | |TensorConstant{(1,) of 10} [@CH] <TensorType(int64, (True,))>
+ >   | | | |Subtensor{int64:int64:int8} [@IL] <TensorType(int64, vector)> ''   
+ >   | | |   |Elemwise{minimum,no_inplace} [@IM] <TensorType(int64, vector)> ''   
+ >   | | |   | |Subtensor{::, int64} [@IN] <TensorType(int32, vector)> ''   
+ >   | | |   | | |Elemwise{Cast{int32}} [@HK] <TensorType(int32, matrix)> ''   
+ >   | | |   | | |Constant{0} [@EL] <int64>
+ >   | | |   | |<TensorType(int64, (True,))> [@GW] <TensorType(int64, (True,))>
+ >   | | |   |ScalarFromTensor [@IE] <int64> ''   
+ >   | | |   |ScalarFromTensor [@II] <int64> ''   
+ >   | | |   |Constant{1} [@EG] <int8>
+ >   | | |GpuSubtensor{:int64:} [@IO] <CudaNdarrayType(float32, 3D)> ''   
+ >   | | | |x_copy0[cuda] [@CD] <CudaNdarrayType(float32, 3D)>
+ >   | | | |ScalarFromTensor [@IP] <int64> ''   
+ >   | | |   |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@HD] <TensorType(int64, scalar)> ''   
+ >   | | |Subtensor{int64:int64:int8} [@IL] <TensorType(int64, vector)> ''   
+ >   | | |Subtensor{int64:int64:int8} [@HH] <TensorType(int64, vector)> ''   
+ >   | | |Elemwise{Composite{minimum(minimum(i0, i1), i1)}} [@HD] <TensorType(int64, scalar)> ''   
+ >   | |w_AttentionModel->input_copy0[cuda] [@EW] <CudaNdarrayType(float32, matrix)>
+ >   |TensorConstant{1.0} [@EX] <TensorType(float32, scalar)>
+ >   |<CudaNdarrayType(float32, matrix)> [@HF] <CudaNdarrayType(float32, matrix)>
+ >   |w_AttentionModel->hidden_copy0[cuda] [@EY] <CudaNdarrayType(float32, matrix)>
+ >   |TensorConstant{1.0} [@EX] <TensorType(float32, scalar)>
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IQ] <TensorType(int64, matrix)> ''   
+ > |Join [@IR] <TensorType(int64, matrix)> ''   
+ >   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   |Elemwise{Add}[(0, 1)] [@IS] <TensorType(int64, row)> ''   
+ >   | |TensorConstant{(1, 1) of 5} [@IT] <TensorType(int64, (True, True))>
+ >   | |InplaceDimShuffle{x,0} [@IU] <TensorType(int64, row)> ''   
+ >   |   |Elemwise{minimum,no_inplace} [@EJ] <TensorType(int64, vector)> ''   
+ >   |Elemwise{Add}[(0, 1)] [@IV] <TensorType(int64, row)> ''   
+ >     |TensorConstant{(1, 1) of 50} [@IW] <TensorType(int64, (True, True))>
+ >     |InplaceDimShuffle{x,0} [@IX] <TensorType(int64, row)> ''   
+ >       |Elemwise{minimum,no_inplace} [@CJ] <TensorType(int64, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IY] <TensorType(int64, matrix)> ''   
+ > |Join [@IZ] <TensorType(int64, matrix)> ''   
+ >   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   |Elemwise{Add}[(0, 1)] [@JA] <TensorType(int64, row)> ''   
+ >   | |TensorConstant{(1, 1) of 5} [@IT] <TensorType(int64, (True, True))>
+ >   | |InplaceDimShuffle{x,0} [@JB] <TensorType(int64, row)> ''   
+ >   |   |Elemwise{minimum,no_inplace} [@GU] <TensorType(int64, vector)> ''   
+ >   |Elemwise{Add}[(0, 1)] [@JC] <TensorType(int64, row)> ''   
+ >     |TensorConstant{(1, 1) of 50} [@IW] <TensorType(int64, (True, True))>
+ >     |InplaceDimShuffle{x,0} [@JD] <TensorType(int64, row)> ''   
+ >       |Elemwise{minimum,no_inplace} [@FK] <TensorType(int64, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@JE] <TensorType(int64, matrix)> ''   
+ > |Join [@JF] <TensorType(int64, matrix)> ''   
+ >   |TensorConstant{0} [@CV] <TensorType(int8, scalar)>
+ >   |Elemwise{Add}[(0, 1)] [@JG] <TensorType(int64, row)> ''   
+ >   | |TensorConstant{(1, 1) of 5} [@IT] <TensorType(int64, (True, True))>
+ >   | |InplaceDimShuffle{x,0} [@JH] <TensorType(int64, row)> ''   
+ >   |   |Elemwise{minimum,no_inplace} [@IM] <TensorType(int64, vector)> ''   
+ >   |Elemwise{Add}[(0, 1)] [@JI] <TensorType(int64, row)> ''   
+ >     |TensorConstant{(1, 1) of 50} [@IW] <TensorType(int64, (True, True))>
+ >     |InplaceDimShuffle{x,0} [@JJ] <TensorType(int64, row)> ''   
+ >       |Elemwise{minimum,no_inplace} [@HI] <TensorType(int64, vector)> ''   
+
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.1 [@A] <CudaNdarrayType(float32, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@BV] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@EZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@GZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IQ] <TensorType(int64, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@IY] <TensorType(int64, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@JE] <TensorType(int64, matrix)> ''   
+
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.2 [@A] <CudaNdarrayType(float32, 3D)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@BV] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@EZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@GZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IQ] <TensorType(int64, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@IY] <TensorType(int64, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@JE] <TensorType(int64, matrix)> ''   
+
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.3 [@A] <CudaNdarrayType(float32, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@BV] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@EZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@GZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IQ] <TensorType(int64, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@IY] <TensorType(int64, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@JE] <TensorType(int64, matrix)> ''   
+
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.4 [@A] <CudaNdarrayType(float32, 3D)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@BV] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@EZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@GZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IQ] <TensorType(int64, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@IY] <TensorType(int64, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@JE] <TensorType(int64, matrix)> ''   
+
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.5 [@A] <CudaNdarrayType(float32, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@BV] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@EZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@GZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IQ] <TensorType(int64, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@IY] <TensorType(int64, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@JE] <TensorType(int64, matrix)> ''   
+
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.6 [@A] <TensorType(int64, 3D)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@BV] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@EZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@GZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IQ] <TensorType(int64, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@IY] <TensorType(int64, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@JE] <TensorType(int64, matrix)> ''   
+
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.7 [@A] <TensorType(int64, 3D)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@BV] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@EZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@GZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IQ] <TensorType(int64, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@IY] <TensorType(int64, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@JE] <TensorType(int64, matrix)> ''   
+
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.8 [@A] <CudaNdarrayType(float32, 3D)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@BV] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@EZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@GZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IQ] <TensorType(int64, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@IY] <TensorType(int64, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@JE] <TensorType(int64, matrix)> ''   
+
+forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.9 [@A] <TensorType(int64, 3D)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@BV] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@DA] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@EZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@FY] <CudaNdarrayType(float32, vector)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@GZ] <CudaNdarrayType(float32, matrix)> ''   
+ >GPU_mrg_uniform{CudaNdarrayType(float32, vector),no_inplace}.0 [@HU] <CudaNdarrayType(float32, vector)> ''   
+ >InplaceDimShuffle{1,0} [@IQ] <TensorType(int64, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@IY] <TensorType(int64, matrix)> ''   
+ >GpuElemwise{Composite{tanh((i0 + i1))},no_inplace} [@FP] <CudaNdarrayType(float32, matrix)> ''   
+ >InplaceDimShuffle{1,0} [@JE] <TensorType(int64, matrix)> ''   
+
+for{gpu,scan_fn} [@CA] <CudaNdarrayType(float32, matrix)> ''   
+ >DeepCopyOp [@JK] <CudaNdarrayType(float32, vector)> ''   
+ > |GpuFlatten{1} [@JL] <CudaNdarrayType(float32, vector)> ''   
+ >   |GpuSubtensor{int64:int64:, int64:int64:} [@JM] <CudaNdarrayType(float32, matrix)> ''   
+ >     |x[t][cuda] [@JN] <CudaNdarrayType(float32, matrix)>
+ >     |ScalarFromTensor [@JO] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@JP] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@JQ] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@JR] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@JS] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@JT] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@JU] <int64> ''   
+ >       |<TensorType(int64, scalar)> [@JV] <TensorType(int64, scalar)>
+
+for{gpu,scan_fn} [@FD] <CudaNdarrayType(float32, matrix)> ''   
+ >DeepCopyOp [@JW] <CudaNdarrayType(float32, vector)> ''   
+ > |GpuFlatten{1} [@JX] <CudaNdarrayType(float32, vector)> ''   
+ >   |GpuSubtensor{int64:int64:, int64:int64:} [@JY] <CudaNdarrayType(float32, matrix)> ''   
+ >     |x[t][cuda] [@JZ] <CudaNdarrayType(float32, matrix)>
+ >     |ScalarFromTensor [@KA] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@KB] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@KC] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@KD] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@KE] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@KF] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@KG] <int64> ''   
+ >       |<TensorType(int64, scalar)> [@KH] <TensorType(int64, scalar)>
+
+for{gpu,scan_fn} [@HC] <CudaNdarrayType(float32, matrix)> ''   
+ >DeepCopyOp [@KI] <CudaNdarrayType(float32, vector)> ''   
+ > |GpuFlatten{1} [@KJ] <CudaNdarrayType(float32, vector)> ''   
+ >   |GpuSubtensor{int64:int64:, int64:int64:} [@KK] <CudaNdarrayType(float32, matrix)> ''   
+ >     |x[t][cuda] [@KL] <CudaNdarrayType(float32, matrix)>
+ >     |ScalarFromTensor [@KM] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@KN] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@KO] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@KP] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@KQ] <int64> ''   
+ >     | |<TensorType(int64, scalar)> [@KR] <TensorType(int64, scalar)>
+ >     |ScalarFromTensor [@KS] <int64> ''   
+ >       |<TensorType(int64, scalar)> [@KT] <TensorType(int64, scalar)>
+
+Storage map footprint:
+ - CudaNdarrayConstant{[[[ 0.]]]}, Shape: (1, 1, 1), ElemSize: 4 Byte(s), TotalSize: 4 Byte(s)
+ - forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.5, Shape: (1, 92160), ElemSize: 4 Byte(s), TotalSize: 368640 Byte(s)
+ - Constant{0}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - CudaNdarrayConstant{[[ 1.]]}, Shape: (1, 1), ElemSize: 4 Byte(s), TotalSize: 4 Byte(s)
+ - Shape_i{0}.0, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - CudaNdarrayConstant{[[[ 1.]]]}, Shape: (1, 1, 1), ElemSize: 4 Byte(s), TotalSize: 4 Byte(s)
+ - Elemwise{Add}[(0, 1)].0, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8 Byte(s)
+ - Constant{7}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - TensorConstant{500}, Shape: (1,), ElemSize: 2 Byte(s), TotalSize: 2.0 Byte(s)
+ - MakeVector.0, Shape: (2,), ElemSize: 8 Byte(s), TotalSize: 16 Byte(s)
+ - TensorConstant{8}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.0, Shape: (1, 5000, 500), ElemSize: 4 Byte(s), TotalSize: 10000000 Byte(s)
+ - TensorConstant{(1, 1, 1) of -0.5}, Shape: (1, 1, 1), ElemSize: 8 Byte(s), TotalSize: 8 Byte(s)
+ - forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.9, Shape: (8, 5000, 2), ElemSize: 8 Byte(s), TotalSize: 640000 Byte(s)
+ - forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.8, Shape: (8, 5000, 2), ElemSize: 4 Byte(s), TotalSize: 320000 Byte(s)
+ - CudaNdarrayConstant{0.0}, Shape: (1,), ElemSize: 4 Byte(s), TotalSize: 4.0 Byte(s)
+ - GpuIncSubtensor{Set;:int64:}.0, Shape: (9, 92160), ElemSize: 4 Byte(s), TotalSize: 3317760 Byte(s)
+ - Constant{-10}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - TensorConstant{1}, Shape: (1,), ElemSize: 1 Byte(s), TotalSize: 1.0 Byte(s)
+ - CudaNdarrayConstant{[[ 0.]]}, Shape: (1, 1), ElemSize: 4 Byte(s), TotalSize: 4 Byte(s)
+ - TensorConstant{(1, 1, 1) of 0.0}, Shape: (1, 1, 1), ElemSize: 8 Byte(s), TotalSize: 8 Byte(s)
+ - forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.2, Shape: (9, 5000, 500), ElemSize: 4 Byte(s), TotalSize: 90000000 Byte(s)
+ - Constant{1}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - TensorConstant{1}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - Constant{8}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - TensorConstant{500}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - TensorConstant{2}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - <CudaNdarrayType(float32, vector)>, Shape: (92160,), ElemSize: 4 Byte(s), TotalSize: 368640 Byte(s)
+ - w_AttentionModel->location, Shape: (500, 2), ElemSize: 4 Byte(s), TotalSize: 4000 Byte(s)
+ - b_AttentionModel->location, Shape: (2,), ElemSize: 4 Byte(s), TotalSize: 8 Byte(s)
+ - w_AttentionModel->input, Shape: (100, 500), ElemSize: 4 Byte(s), TotalSize: 200000 Byte(s)
+ - w_AttentionModel->hidden, Shape: (500, 500), ElemSize: 4 Byte(s), TotalSize: 1000000 Byte(s)
+ - b_AttentionModel->hidden, Shape: (500,), ElemSize: 4 Byte(s), TotalSize: 2000 Byte(s)
+ - w_FC, Shape: (4000, 1000), ElemSize: 4 Byte(s), TotalSize: 16000000 Byte(s)
+ - b_FC, Shape: (1000,), ElemSize: 4 Byte(s), TotalSize: 4000 Byte(s)
+ - w_FC, Shape: (1000, 300), ElemSize: 4 Byte(s), TotalSize: 1200000 Byte(s)
+ - b_FC, Shape: (300,), ElemSize: 4 Byte(s), TotalSize: 1200 Byte(s)
+ - w_FC, Shape: (300, 10), ElemSize: 4 Byte(s), TotalSize: 12000 Byte(s)
+ - b_FC, Shape: (10,), ElemSize: 4 Byte(s), TotalSize: 40 Byte(s)
+ - reward_coef, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - Constant{-9}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - GpuFromHost.0, Shape: (1, 5000, 500), ElemSize: 4 Byte(s), TotalSize: 10000000 Byte(s)
+ - Constant{-1}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - Elemwise{Add}[(0, 1)].0, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8 Byte(s)
+ - TensorConstant{0.0}, Shape: (1,), ElemSize: 4 Byte(s), TotalSize: 4.0 Byte(s)
+ - DeepCopyOp.0, Shape: (1, 92160), ElemSize: 4 Byte(s), TotalSize: 368640 Byte(s)
+ - TensorConstant{1.0}, Shape: (1,), ElemSize: 4 Byte(s), TotalSize: 4.0 Byte(s)
+ - forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.7, Shape: (8, 5000, 2), ElemSize: 8 Byte(s), TotalSize: 640000 Byte(s)
+ - GpuFromHost.0, Shape: (5000, 28, 28), ElemSize: 4 Byte(s), TotalSize: 15680000 Byte(s)
+ - forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.3, Shape: (9, 92160), ElemSize: 4 Byte(s), TotalSize: 3317760 Byte(s)
+ - forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.1, Shape: (1, 92160), ElemSize: 4 Byte(s), TotalSize: 368640 Byte(s)
+ - ScalarFromTensor.0, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - GpuDimShuffle{x,0}.0, Shape: (1, 2), ElemSize: 4 Byte(s), TotalSize: 8 Byte(s)
+ - DeepCopyOp.0, Shape: (1, 5000, 500), ElemSize: 4 Byte(s), TotalSize: 10000000 Byte(s)
+ - forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.6, Shape: (8, 5000, 2), ElemSize: 8 Byte(s), TotalSize: 640000 Byte(s)
+ - GpuIncSubtensor{InplaceSet;:int64:}.0, Shape: (1, 92160), ElemSize: 4 Byte(s), TotalSize: 368640 Byte(s)
+ - GpuDimShuffle{x,0}.0, Shape: (1, 500), ElemSize: 4 Byte(s), TotalSize: 2000 Byte(s)
+ - TensorConstant{0}, Shape: (1,), ElemSize: 1 Byte(s), TotalSize: 1.0 Byte(s)
+ - GpuAlloc{memset_0=True}.0, Shape: (9, 5000, 500), ElemSize: 4 Byte(s), TotalSize: 90000000 Byte(s)
+ - forall_inplace,gpu,scan_fn&scan_fn&scan_fn}.4, Shape: (1, 5000, 500), ElemSize: 4 Byte(s), TotalSize: 10000000 Byte(s)
+ - TensorConstant{(1,) of -10}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8 Byte(s)
+ - GpuAlloc{memset_0=True}.0, Shape: (9, 92160), ElemSize: 4 Byte(s), TotalSize: 3317760 Byte(s)
+ - y, Shape: (5000,), ElemSize: 4 Byte(s), TotalSize: 20000 Byte(s)
+ - Elemwise{Cast{int32}}.0, Shape: (1,), ElemSize: 4 Byte(s), TotalSize: 4 Byte(s)
+ - TensorConstant{9}, Shape: (1,), ElemSize: 8 Byte(s), TotalSize: 8.0 Byte(s)
+ - lr, Shape: (1,), ElemSize: 4 Byte(s), TotalSize: 4.0 Byte(s)
+ - x01201234, Shape: (5000, 28, 28), ElemSize: 4 Byte(s), TotalSize: 15680000 Byte(s)
+
+HINT: Re-running with most Theano optimization disabled could give you a back-trace of when this node was created. This can be done with by setting the Theano flag 'optimizer=fast_compile'. If that does not work, Theano optimizations can be disabled with 'optimizer=None'.

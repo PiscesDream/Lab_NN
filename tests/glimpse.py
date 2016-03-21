@@ -21,12 +21,14 @@ if __name__ == '__main__':
 
     # AttentionModel: glimpse_shape, glimpse_times, dim_hidden, dim_out, activation=T.tanh, bptt_truncate=-1
     net = AttentionModel(
-        glimpse_shape=(10,10,1), 
+        glimpse_shape=(6,6,1), 
         glimpse_times=8, 
-        dim_hidden=500, 
-        dim_fc=[2000, 500], 
+        dim_hidden=600, 
+        dim_fc=[3000, 1500], 
         dim_out=10,
-        reward_coef=1.0)
+        reward_coef=1.0,
+        activation=T.nnet.sigmoid,
+        rng_std=3.0)
 
 #   d = net.debug(x[:100], y[:100], 0.01)
 #   print d
@@ -38,13 +40,13 @@ if __name__ == '__main__':
 #   print loc[:3] 
 
 
-    net.fit(trainx, trainy, batch_size=5000,
-            lr=1e-1,
+    net.fit(trainx, trainy, batch_size=4000,
+            lr=2e-2,
             max_iter=100000, 
-            test_iter=50,      # test on validation set
-            disp_iter=5,        # display
-            lr_iter=1000,         # update lr
-            decay=0.90,
+            test_iter=10,      # test on validation set
+            disp_iter=1,        # display
+            lr_iter=20,         # update lr
+            decay=0.95,
             val=(testx, testy))
 
 
