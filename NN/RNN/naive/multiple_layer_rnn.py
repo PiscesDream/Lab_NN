@@ -1,23 +1,10 @@
 import theano 
 import theano.tensor as T
 import numpy as np
-
-def generate_wb(dim1, dim2, label, params=['w', 'b']): # generate a set of w and b for transformation from dim1 to dim2
-    upper = 6/np.sqrt(dim1+dim2)
-    lower = -upper 
-    rets = []
-    if 'w' in params:
-        w = theano.shared(name='w_{}'.format(label),
-                          value=np.random.uniform(upper, lower, size=(dim1, dim2)).astype(theano.config.floatX))
-        rets.append(w)
-    if 'b' in params:
-        b = theano.shared(name='b_{}'.format(label),
-                          value=np.random.uniform(upper, lower, size=(dim2)).astype(theano.config.floatX))
-        rets.append(b)
-    return rets[0] if len(rets) == 1 else rets
+from NN.common.layers import generate_wb 
 
 class RNN(object):
-    def __init__(self, x, dim_input, dim_hidden, activation=T.tanh, bptt_truncate=4, name='None'):
+    def __init__(self, x, dim_input, dim_hidden, activation=T.tanh, bptt_truncate=-1, name='RNN'):
         # x is in (N * Time * feature)
         w_input = generate_wb(dim_input, dim_hidden, '{}_input'.format(name), params=['w'])
         w_hidden, b_hidden = generate_wb(dim_hidden, dim_hidden, '{}_hidden'.format(name), params=['w', 'b'])
