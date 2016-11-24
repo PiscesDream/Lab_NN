@@ -1,5 +1,7 @@
 # NN
 
+Reimplement of classical/advanced neural network
+
 - ART (adaptive resonance theory)
 - autoencoder
     - DA (denoise autoencoder)
