@@ -1,6 +1,6 @@
-# NN
+# Lab_theano_NN
 
-Reimplement of classical/advanced neural network
+Reimplement of classical/advanced neural network using Theano.
 
 - ART (adaptive resonance theory)
 - autoencoder
